@@ -3,7 +3,7 @@ import nltk
 
 
 def get_user_preferences():
-    print("Welcome to Flavor Finder!")
+    print("Welcome to Flavor Finder! This app will recommend food for you based on your preferences!")
     allergies = input("Do you have any allergies? (separated by commas, or 'none' if none): ")
     likes = input("What are your likes? (separated by commas): ")
     dislikes = input("What are your dislikes? (separated by commas): ")
