@@ -1,9 +1,10 @@
 import random
 import nltk
 
-
 def get_user_preferences():
-    print("Welcome to Flavor Finder! This app will recommend food for you based on your preferences!")
+    print("Welcome to Flavor Finder!")
+    print("This app will recommend food for you based on your preferences!")
+    print("-------------------------------------")
     allergies = input("Do you have any allergies? (separated by commas, or 'none' if none): ")
     likes = input("What are your likes? (separated by commas): ")
     dislikes = input("What are your dislikes? (separated by commas): ")
@@ -30,8 +31,8 @@ def suggest_dish(allergies, likes, dislikes):
         recipe_ingredients = [ingredient.lower() for ingredient in dish["ingredients"]]
         if any(like in recipe_ingredients for like in likes_tokens):
             priority_dishes.append(dish)
-        else:
-            priority_dishes.append(dish)
+     #   else:
+     #       priority_dishes.append(dish)
     
     if priority_dishes:
         suggested_dish = random.choice(priority_dishes)
@@ -326,6 +327,310 @@ dishes = [
   ],
   "instructions": "1. In a large skillet, melt the butter over medium-high heat.\n2. Add the sliced beef sirloin to the skillet and cook until browned. Remove the beef from the skillet and set aside.\n3. In the same skillet, add the sliced onion and minced garlic. Sauté until the onion is translucent.\n4. Add the sliced mushrooms to the skillet and cook until they release their moisture and become tender.\n5. In a small bowl, whisk together the beef broth and all-purpose flour until smooth.\n6. Pour the broth mixture into the skillet with the onions and mushrooms. Stir well and bring to a simmer.\n7. Return the cooked beef to the skillet and stir to combine with the sauce.\n8. Reduce the heat to low and stir in the sour cream and Dijon mustard. Heat gently until the sauce is warmed through, but do not boil.\n9. Season with salt and pepper to taste.\n10. Serve the Beef Stroganoff over egg noodles or rice.\n11. Garnish with fresh parsley before serving."
 },
+{
+"name": "Broccoli and Corn Stir-Fry",
+"ingredients": [
+"2 cups broccoli florets", "1 cup corn kernels", "1 red bell pepper, thinly sliced", "1 small onion, thinly sliced", "2 cloves garlic, minced", "2 tablespoons soy sauce", "1 tablespoon oyster sauce", "1 tablespoon sesame oil", "1 tablespoon vegetable oil", "Salt and pepper to taste"
+],
+"instructions": "1. Heat the vegetable oil in a large skillet or wok over medium-high heat.\n2. Add the minced garlic and sauté for a minute until fragrant.\n3. Add the sliced onion and red bell pepper to the skillet. Stir-fry for 2-3 minutes until the vegetables start to soften.\n4. Add the broccoli florets and corn kernels to the skillet. Stir-fry for another 3-4 minutes until the broccoli is tender-crisp.\n5. In a small bowl, whisk together the soy sauce, oyster sauce, and sesame oil.\n6. Pour the sauce mixture over the vegetables in the skillet. Stir well to coat the vegetables evenly.\n7. Season with salt and pepper to taste.\n8. Continue stir-frying for another 1-2 minutes until the sauce is heated through.\n9. Remove from heat and transfer the stir-fried vegetables to a serving dish.\n10. Serve hot as a side dish or over steamed rice.\n11. Enjoy your delicious Broccoli and Corn Stir-Fry!"
+}, 
+  {
+  "name": "Corn Fritters",
+  "ingredients": [
+    "1 cup all-purpose flour",
+    "1 teaspoon baking powder",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/4 teaspoon paprika",
+    "1/4 teaspoon garlic powder",
+    "1/2 cup milk",
+    "1 large egg",
+    "2 cups corn kernels",
+    "1/4 cup chopped green onions",
+    "2 tablespoons chopped fresh parsley",
+    "Vegetable oil for frying"
+  ],
+  "instructions": "1. In a large bowl, whisk together the flour, baking powder, salt, black pepper, paprika, and garlic powder.\n2. In a separate bowl, whisk together the milk and egg.\n3. Pour the milk mixture into the flour mixture and stir until well combined.\n4. Add the corn kernels, chopped green onions, and chopped parsley to the batter. Stir until evenly distributed.\n5. In a large skillet, heat enough vegetable oil to cover the bottom of the pan over medium-high heat.\n6. Once the oil is hot, drop spoonfuls of the corn batter into the skillet, spacing them apart.\n7. Flatten the spoonfuls slightly with the back of a spoon to form fritters.\n8. Cook the fritters for 2-3 minutes per side, or until golden brown and crispy.\n9. Remove the cooked fritters from the skillet and place them on a paper towel-lined plate to drain excess oil.\n10. Repeat steps 6-9 until all the batter is used.\n11. Serve the corn fritters warm as an appetizer or side dish.\n12. Enjoy your delicious homemade Corn Fritters!"
+}, 
+  {
+  "name": "Garlic Roasted Broccoli",
+  "ingredients": [
+    "2 heads of broccoli, cut into florets",
+    "3 tablespoons olive oil",
+    "4 cloves garlic, minced",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/4 teaspoon red pepper flakes (optional)",
+    "1 tablespoon lemon juice",
+    "Grated Parmesan cheese for garnish"
+  ],
+  "instructions": "1. Preheat the oven to 425°F (220°C).\n2. Place the broccoli florets on a baking sheet.\n3. In a small bowl, combine the olive oil, minced garlic, salt, black pepper, and red pepper flakes (if using).\n4. Drizzle the olive oil mixture over the broccoli and toss until the florets are evenly coated.\n5. Spread the broccoli out in a single layer on the baking sheet.\n6. Roast in the preheated oven for 20-25 minutes, or until the edges of the broccoli start to brown and crisp.\n7. Remove the roasted broccoli from the oven and drizzle with lemon juice.\n8. Sprinkle grated Parmesan cheese over the top for added flavor (optional).\n9. Transfer the garlic roasted broccoli to a serving dish.\n10. Serve hot as a side dish or as a healthy snack.\n11. Enjoy your delicious Garlic Roasted Broccoli!"
+},
+
+  {
+  "name": "Broccoli Cheddar Soup",
+  "ingredients": [
+    "2 heads of broccoli, cut into florets",
+    "1 onion, diced",
+    "2 carrots, diced",
+    "2 cloves of garlic, minced",
+    "4 cups vegetable or chicken broth",
+    "1 cup milk",
+    "2 cups shredded cheddar cheese",
+    "2 tablespoons butter",
+    "2 tablespoons all-purpose flour",
+    "1/2 teaspoon dried thyme",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. In a large pot, melt the butter over medium heat.\n2. Add the diced onion, carrots, and minced garlic to the pot. Sauté for 5-7 minutes, or until the vegetables start to soften.\n3. Sprinkle the flour over the vegetables and stir to coat.\n4. Slowly pour in the vegetable or chicken broth, stirring continuously to avoid lumps.\n5. Add the broccoli florets and dried thyme to the pot. Bring the mixture to a boil, then reduce the heat and simmer for 15-20 minutes, or until the broccoli is tender.\n6. Using an immersion blender or regular blender, puree the soup until smooth. Alternatively, you can leave it slightly chunky if desired.\n7. Return the soup to the pot and stir in the milk.\n8. Gradually add the shredded cheddar cheese, stirring until melted and well combined.\n9. Season with salt and pepper to taste.\n10. Simmer the soup for an additional 5 minutes to allow the flavors to meld together.\n11. Serve hot and garnish with additional shredded cheddar cheese if desired.\n12. Enjoy your comforting and creamy Broccoli Cheddar Soup!"
+},
+  {
+  "name": "Cheesy Baked Ziti",
+  "ingredients": [
+    "1 pound ziti pasta",
+    "2 cups marinara sauce",
+    "2 cups shredded mozzarella cheese",
+    "1 cup ricotta cheese",
+    "1/2 cup grated Parmesan cheese",
+    "2 cloves garlic, minced",
+    "1 teaspoon dried oregano",
+    "1/2 teaspoon dried basil",
+    "1/4 teaspoon red pepper flakes (optional)",
+    "Salt and pepper to taste",
+    "Fresh basil leaves for garnish"
+  ],
+  "instructions": "1. Preheat the oven to 375°F (190°C). Grease a 9x13-inch baking dish.\n2. Cook the ziti pasta according to package instructions until al dente. Drain and set aside.\n3. In a large mixing bowl, combine the marinara sauce, minced garlic, dried oregano, dried basil, red pepper flakes (if using), salt, and pepper. Stir well.\n4. Add the cooked ziti pasta to the bowl with the sauce and toss to coat the pasta evenly.\n5. Transfer half of the sauced pasta to the prepared baking dish and spread it out evenly.\n6. Dollop spoonfuls of ricotta cheese over the pasta and spread it out slightly with the back of a spoon.\n7. Sprinkle half of the shredded mozzarella cheese and grated Parmesan cheese over the ricotta.\n8. Repeat the layers with the remaining sauced pasta, ricotta cheese, and shredded cheeses.\n9. Cover the baking dish with foil and bake for 20 minutes.\n10. Remove the foil and bake for an additional 10-15 minutes, or until the cheese is melted and bubbly.\n11. Remove from the oven and let it cool for a few minutes.\n12. Garnish with fresh basil leaves before serving.\n13. Serve hot and enjoy the cheesy goodness of Baked Ziti!"
+},
+  {
+  "name": "Macaroni and Cheese",
+  "ingredients": [
+    "8 ounces elbow macaroni",
+    "2 cups shredded cheddar cheese",
+    "2 cups milk",
+    "2 tablespoons butter",
+    "2 tablespoons all-purpose flour",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/4 teaspoon paprika (optional)",
+    "1/4 cup breadcrumbs (optional)"
+  ],
+  "instructions": "1. Cook the macaroni according to package instructions until al dente. Drain and set aside.\n2. In a saucepan, melt the butter over medium heat. Add the flour and whisk constantly for about 1 minute to create a roux.\n3. Slowly pour in the milk while whisking continuously to combine with the roux. Continue cooking and whisking until the mixture thickens, about 5 minutes.\n4. Add the salt, black pepper, and paprika (if using), and stir to combine.\n5. Reduce the heat to low and gradually add the shredded cheddar cheese, stirring until it melts and the sauce becomes smooth and creamy.\n6. Add the cooked macaroni to the cheese sauce and stir until well coated.\n7. If desired, transfer the macaroni and cheese mixture to a greased baking dish and sprinkle breadcrumbs on top for a crispy topping.\n8. Preheat the oven to 350°F (175°C) and bake the macaroni and cheese for about 20-25 minutes, or until golden and bubbling.\n9. Remove from the oven and let it cool for a few minutes.\n10. Serve hot as a comforting and cheesy main dish or side.\n11. Enjoy the classic and delicious Macaroni and Cheese!"
+},
+  {
+  "name": "Laksa",
+  "ingredients": [
+    "200g rice noodles",
+    "200g chicken, sliced",
+    "200g shrimp, peeled and deveined",
+    "2 tablespoons laksa paste",
+    "400ml coconut milk",
+    "500ml chicken broth",
+    "2 tablespoons fish sauce",
+    "1 tablespoon sugar",
+    "1 tablespoon vegetable oil",
+    "Bean sprouts, for garnish",
+    "Hard-boiled eggs, halved",
+    "Fresh cilantro leaves, for garnish",
+    "Lime wedges, for serving"
+  ],
+  "instructions": "1. Prepare the rice noodles according to the package instructions. Drain and set aside.\n2. Heat the vegetable oil in a large pot or wok over medium heat.\n3. Add the laksa paste and cook for a minute until fragrant.\n4. Add the chicken slices and cook until they are no longer pink.\n5. Add the shrimp and cook until they turn pink and are cooked through.\n6. Pour in the coconut milk and chicken broth, and bring the mixture to a gentle simmer.\n7. Stir in the fish sauce and sugar, and let the soup simmer for about 10 minutes to allow the flavors to meld together.\n8. Divide the cooked rice noodles among serving bowls.\n9. Ladle the hot laksa soup over the noodles, ensuring each bowl has a generous amount of chicken, shrimp, and broth.\n10. Garnish with bean sprouts, hard-boiled eggs, and fresh cilantro leaves.\n11. Serve hot with lime wedges on the side.\n12. Enjoy the aromatic and spicy flavors of Laksa!"
+},
+  {
+  "name": "Chicken Rice",
+  "ingredients": [
+    "1 whole chicken",
+    "2 cups jasmine rice",
+    "4 cups chicken broth",
+    "4 cloves garlic, minced",
+    "1 thumb-sized ginger, sliced",
+    "2 tablespoons vegetable oil",
+    "1 tablespoon sesame oil",
+    "2 tablespoons soy sauce",
+    "1 cucumber, sliced",
+    "Fresh cilantro leaves, for garnish",
+    "Sliced chili, for garnish",
+    "Lime wedges, for serving"
+  ],
+  "instructions": "1. In a large pot, bring water to a boil. Add the whole chicken and cook for about 30-40 minutes until fully cooked. Remove the chicken from the pot and set it aside to cool. Reserve the chicken broth for cooking the rice.\n2. Rinse the jasmine rice under cold water until the water runs clear.\n3. In a separate pot, heat vegetable oil and sesame oil over medium heat. Add minced garlic and sliced ginger. Sauté until fragrant.\n4. Add the rinsed jasmine rice to the pot and stir well to coat the grains with oil. Cook for a couple of minutes.\n5. Pour 4 cups of chicken broth into the pot with rice. Bring to a boil, then reduce the heat to low, cover, and let it simmer for about 15-20 minutes or until the rice is cooked and fluffy.\n6. While the rice is cooking, carve the chicken into serving pieces.\n7. In a small bowl, mix soy sauce and a tablespoon of chicken broth.\n8. Serve the chicken rice by placing a scoop of rice on a plate, top it with a few chicken pieces, and drizzle with the soy sauce mixture.\n9. Garnish with cucumber slices, fresh cilantro leaves, and sliced chili.\n10. Serve hot with lime wedges on the side.\n11. Enjoy the fragrant and flavorful Chicken Rice!"
+},
+  {
+  "name": "Hokkien Mee",
+  "ingredients": [
+    "200g yellow noodles",
+    "200g thick rice noodles (bee hoon)",
+    "200g prawns, peeled and deveined",
+    "200g pork belly, sliced",
+    "100g squid, sliced",
+    "4 cloves garlic, minced",
+    "2 eggs, beaten",
+    "4 cups chicken broth",
+    "1 cup bean sprouts",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon dark soy sauce",
+    "1 tablespoon cooking oil",
+    "Salt and pepper to taste",
+    "Lime wedges, for serving"
+  ],
+  "instructions": "1. Heat cooking oil in a large wok or frying pan over medium heat.\n2. Add minced garlic and sauté until fragrant.\n3. Add pork belly slices to the pan and cook until browned and slightly crispy.\n4. Add prawns and squid to the pan and stir-fry until cooked through.\n5. Push the ingredients to one side of the pan and pour the beaten eggs into the empty space. Scramble the eggs until cooked.\n6. Add yellow noodles and rice noodles to the pan. Stir-fry everything together for a few minutes.\n7. Add soy sauce, oyster sauce, and dark soy sauce to the noodles. Stir well to coat the noodles evenly.\n8. Pour in the chicken broth and bring it to a simmer. Cook for a few minutes until the noodles absorb the flavors.\n9. Add bean sprouts to the pan and stir-fry for another minute.\n10. Season with salt and pepper to taste.\n11. Serve the Hokkien Mee hot, garnished with lime wedges.\n12. Squeeze lime juice over the noodles before eating.\n13. Enjoy the rich and savory Hokkien Mee!"
+},
+  {
+  "name": "Fish Ball Noodles",
+  "ingredients": [
+    "200g fish balls",
+    "200g noodles of your choice",
+    "4 cups chicken or vegetable broth",
+    "2 cloves garlic, minced",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon sesame oil",
+    "1 tablespoon cooking oil",
+    "Bok choy or other leafy greens, for serving",
+    "Green onions, chopped, for garnish",
+    "Fried shallots, for garnish",
+    "Chili sauce or sambal, for serving (optional)"
+  ],
+  "instructions": "1. Bring a pot of water to a boil and cook the noodles according to package instructions. Drain and set aside.\n2. Heat cooking oil in a large pot or saucepan over medium heat.\n3. Add minced garlic to the pot and sauté until fragrant.\n4. Pour in the chicken or vegetable broth and bring it to a simmer.\n5. Add soy sauce, oyster sauce, and sesame oil to the broth. Stir well to combine.\n6. Add fish balls to the broth and cook for a few minutes until heated through.\n7. Meanwhile, blanch bok choy or other leafy greens in boiling water for a minute or two until wilted. Drain and set aside.\n8. To serve, divide the cooked noodles into bowls.\n9. Ladle the fish ball broth over the noodles, making sure to include fish balls in each bowl.\n10. Add blanched bok choy on top of the noodles.\n11. Garnish with chopped green onions and fried shallots.\n12. Serve the Fish Ball Noodles hot, with chili sauce or sambal on the side for extra heat, if desired.\n13. Enjoy the comforting and tasty Fish Ball Noodles!"
+},
+  {
+  "name": "Spicy Szechuan Chicken",
+  "ingredients": [
+    "500g boneless chicken, cut into bite-sized pieces",
+    "2 tablespoons vegetable oil",
+    "3 cloves garlic, minced",
+    "1 tablespoon ginger, minced",
+    "2 tablespoons Szechuan peppercorns, crushed",
+    "2 tablespoons chili bean paste",
+    "1 tablespoon soy sauce",
+    "1 tablespoon rice vinegar",
+    "1 tablespoon sugar",
+    "1/2 cup chicken broth",
+    "1/2 cup water",
+    "1 tablespoon cornstarch, mixed with 2 tablespoons water",
+    "2 green onions, sliced",
+    "1 tablespoon sesame oil",
+    "Steamed rice, for serving"
+  ],
+  "instructions": "1. Heat the vegetable oil in a wok or large skillet over high heat.\n2. Add the minced garlic, ginger, and crushed Szechuan peppercorns. Stir-fry for about 30 seconds until fragrant.\n3. Add the chicken to the wok and stir-fry until it is browned and cooked through.\n4. Push the chicken to the sides of the wok and add the chili bean paste to the center. Stir-fry the paste for a minute to release its flavors.\n5. Add the soy sauce, rice vinegar, sugar, chicken broth, and water to the wok. Stir well to combine all the ingredients.\n6. Bring the sauce to a simmer and let it cook for a few minutes until it thickens slightly.\n7. Stir in the cornstarch-water mixture to further thicken the sauce.\n8. Add the sliced green onions and sesame oil to the wok. Stir well to incorporate them into the dish.\n9. Remove from heat and transfer the Spicy Szechuan Chicken to a serving dish.\n10. Serve hot with steamed rice.\n11. Enjoy the flavorful and spicy Spicy Szechuan Chicken!"
+},
+  {
+  "name": "Tom Yum Soup",
+  "ingredients": [
+    "4 cups vegetable or chicken broth",
+    "2 stalks lemongrass, bruised and cut into 2-inch pieces",
+    "3 kaffir lime leaves, torn into pieces",
+    "3-4 slices galangal or ginger",
+    "2 cloves garlic, minced",
+    "2 Thai bird's eye chilies, sliced (adjust to taste)",
+    "1 cup mushrooms, sliced",
+    "1 tomato, cut into wedges",
+    "1 small onion, sliced",
+    "1/2 cup cooked shrimp or chicken (optional)",
+    "2 tablespoons fish sauce",
+    "1 tablespoon lime juice",
+    "1 teaspoon sugar",
+    "Fresh cilantro leaves for garnish"
+  ],
+  "instructions": "1. In a large pot, bring the vegetable or chicken broth to a boil.\n2. Add the lemongrass, kaffir lime leaves, galangal or ginger, minced garlic, and sliced Thai bird's eye chilies to the pot. Simmer for about 5 minutes to infuse the flavors into the broth.\n3. Add the mushrooms, tomato wedges, and sliced onion to the pot. Continue simmering for another 5 minutes until the vegetables are tender.\n4. If using, add the cooked shrimp or chicken to the soup and cook for an additional 2 minutes to heat through.\n5. Stir in the fish sauce, lime juice, and sugar. Taste and adjust the seasoning according to your preference.\n6. Remove the lemongrass stalks, kaffir lime leaves, and galangal or ginger slices from the soup.\n7. Ladle the Tom Yum Soup into bowls and garnish with fresh cilantro leaves.\n8. Serve hot and enjoy the aromatic and spicy flavors of this traditional Thai soup."
+},
+  {
+  "name": "Green Curry Soup",
+  "ingredients": [
+    "2 tablespoons green curry paste",
+    "1 can (14 oz) coconut milk",
+    "2 cups vegetable or chicken broth",
+    "1 tablespoon vegetable oil",
+    "1 onion, thinly sliced",
+    "2 cloves garlic, minced",
+    "1 tablespoon grated fresh ginger",
+    "1 bell pepper, thinly sliced",
+    "1 cup sliced mushrooms",
+    "1 cup diced tofu or cooked chicken",
+    "1 cup broccoli florets",
+    "1 tablespoon soy sauce",
+    "1 tablespoon fish sauce (optional)",
+    "1 tablespoon lime juice",
+    "1 tablespoon brown sugar",
+    "Fresh cilantro leaves for garnish"
+  ],
+  "instructions": "1. Heat the vegetable oil in a large pot over medium heat.\n2. Add the green curry paste and cook for a minute until fragrant.\n3. Stir in the minced garlic, grated ginger, and sliced onion. Cook for another 2 minutes until the onion softens.\n4. Pour in the coconut milk and vegetable or chicken broth. Bring to a simmer.\n5. Add the bell pepper, mushrooms, tofu or cooked chicken, and broccoli florets to the pot. Simmer for about 10 minutes until the vegetables are tender.\n6. Stir in the soy sauce, fish sauce (if using), lime juice, and brown sugar. Adjust the seasoning according to your taste.\n7. Remove the pot from heat and ladle the Green Curry Soup into bowls.\n8. Garnish with fresh cilantro leaves.\n9. Serve hot and enjoy the aromatic and spicy flavors of this Thai-inspired soup."
+},
+  {
+  "name": "Tomato Basil Pasta",
+  "ingredients": [
+    "8 ounces spaghetti or your preferred pasta",
+    "2 tablespoons olive oil",
+    "3 cloves garlic, minced",
+    "1 can (14 oz) diced tomatoes",
+    "1/4 teaspoon red pepper flakes (optional)",
+    "1/2 teaspoon dried oregano",
+    "1/2 teaspoon dried basil",
+    "Salt and pepper to taste",
+    "1/4 cup fresh basil leaves, torn",
+    "Grated Parmesan cheese for garnish"
+  ],
+  "instructions": "1. Cook the pasta according to the package instructions until al dente. Drain and set aside.\n2. In a large skillet, heat the olive oil over medium heat.\n3. Add the minced garlic and sauté for about 1 minute until fragrant.\n4. Add the diced tomatoes, red pepper flakes (if using), dried oregano, and dried basil to the skillet. Stir well to combine.\n5. Season with salt and pepper to taste. Simmer the tomato mixture for about 10 minutes, stirring occasionally.\n6. Add the cooked pasta to the skillet and toss to coat it evenly with the tomato sauce.\n7. Stir in the torn fresh basil leaves.\n8. Remove from heat and transfer the Tomato Basil Pasta to serving plates.\n9. Garnish with grated Parmesan cheese.\n10. Serve hot and enjoy the flavorful combination of tomatoes, basil, and pasta."
+},
+  {
+  "name": "Rogan Josh",
+  "ingredients": [
+    "500g mutton, cut into pieces",
+    "2 onions, finely chopped",
+    "4 cloves garlic, minced",
+    "1-inch ginger, grated",
+    "2 tomatoes, pureed",
+    "2 tablespoons vegetable oil",
+    "1 tablespoon ghee",
+    "2 teaspoons red chili powder",
+    "1 teaspoon turmeric powder",
+    "1 teaspoon ground cumin",
+    "1 teaspoon ground coriander",
+    "1 teaspoon garam masala",
+    "1 cup plain yogurt",
+    "Salt to taste",
+    "Fresh cilantro for garnish"
+  ],
+  "instructions": "1. Heat the vegetable oil and ghee in a large pot or pressure cooker over medium heat.\n2. Add the chopped onions and sauté until golden brown.\n3. Add the minced garlic and grated ginger. Sauté for another minute.\n4. Add the mutton pieces to the pot and cook until browned on all sides.\n5. Stir in the tomato puree and cook for a few minutes until the raw smell disappears.\n6. Add the red chili powder, turmeric powder, ground cumin, ground coriander, and garam masala. Mix well to coat the mutton.\n7. Reduce the heat to low and add the plain yogurt. Stir well to combine.\n8. Cover the pot and simmer for about 1-2 hours, or until the mutton is tender and cooked through. If using a pressure cooker, cook for about 20-25 minutes.\n9. Season with salt to taste.\n10. Garnish with fresh cilantro before serving.\n11. Serve hot with rice or naan bread.\n12. Enjoy the rich and flavorful Rogan Josh!"
+},
+  {
+  "name": "Pork Adobo",
+  "ingredients": [
+    "1 kg pork belly or shoulder, cut into cubes",
+    "1/2 cup soy sauce",
+    "1/2 cup vinegar (preferably white cane vinegar)",
+    "4 cloves garlic, minced",
+    "1 onion, chopped",
+    "1 bay leaf",
+    "1 teaspoon whole peppercorns",
+    "1/2 cup water",
+    "2 tablespoons cooking oil",
+    "Salt and pepper to taste",
+    "Chopped green onions for garnish"
+  ],
+  "instructions": "1. In a large bowl, combine the pork cubes, soy sauce, vinegar, minced garlic, chopped onion, bay leaf, and whole peppercorns. Mix well to coat the pork in the marinade. Let it marinate for at least 30 minutes or up to overnight in the refrigerator.\n2. Heat the cooking oil in a large skillet or pot over medium heat.\n3. Remove the pork from the marinade, reserving the marinade for later use. Add the pork to the hot skillet and cook until browned on all sides.\n4. Pour in the reserved marinade and add the water. Bring to a boil, then reduce the heat to low.\n5. Cover the skillet and let the pork simmer for about 1 to 1 1/2 hours, or until the pork is tender and the flavors have melded together. Stir occasionally to prevent sticking.\n6. Once the pork is tender, remove the lid and continue cooking uncovered for about 10-15 minutes to reduce the sauce and thicken it slightly.\n7. Season with salt and pepper to taste.\n8. Transfer the Pork Adobo to a serving dish and garnish with chopped green onions.\n9. Serve hot with steamed rice.\n10. Enjoy the delicious and tangy Pork Adobo!"
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
