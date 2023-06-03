@@ -227,6 +227,111 @@ dishes = [
   ],
   "instructions": "1. Heat vegetable oil in a large skillet or wok over medium-high heat.\n2. Season the pork pieces with salt and pepper, then add them to the hot skillet. Cook until browned and cooked through.\n3. Remove the cooked pork from the skillet and set aside.\n4. In the same skillet, add the onion and bell peppers. Stir-fry for a few minutes until they start to soften.\n5. In a small bowl, whisk together ketchup, vinegar, soy sauce, sugar, and cornstarch mixture.\n6. Pour the sauce mixture into the skillet with the vegetables. Stir well to combine.\n7. Add the cooked pork and pineapple chunks to the skillet. Stir gently to coat everything with the sauce.\n8. Simmer for a few minutes until the sauce thickens and coats the pork and vegetables.\n9. Remove from heat and serve hot with cooked rice."
 }, 
+  {
+  "name": "Chicken Tikka Masala",
+  "ingredients": [
+    "1 lb boneless, skinless chicken breasts, cut into bite-sized pieces",
+    "1 cup plain yogurt",
+    "2 tablespoons lemon juice",
+    "2 tablespoons vegetable oil",
+    "1 large onion, finely chopped",
+    "2 cloves garlic, minced",
+    "1 tablespoon ginger, grated",
+    "2 teaspoons ground cumin",
+    "2 teaspoons ground coriander",
+    "1 teaspoon ground paprika",
+    "1 teaspoon ground turmeric",
+    "1 teaspoon garam masala",
+    "1/2 teaspoon chili powder",
+    "1 cup tomato puree",
+    "1 cup heavy cream",
+    "Salt to taste",
+    "Fresh cilantro leaves, for garnish",
+    "Cooked basmati rice, for serving"
+  ],
+  "instructions": "1. In a bowl, combine the yogurt and lemon juice. Add the chicken pieces and marinate for at least 1 hour, or overnight for best results.\n2. Heat the vegetable oil in a large skillet over medium heat. Add the chopped onion and cook until softened and lightly browned.\n3. Add the minced garlic and grated ginger to the skillet. Cook for an additional minute.\n4. In a small bowl, mix together the ground cumin, coriander, paprika, turmeric, garam masala, and chili powder. Add this spice mixture to the skillet and cook for 1-2 minutes, stirring constantly.\n5. Add the marinated chicken pieces to the skillet and cook until they are browned on all sides.\n6. Stir in the tomato puree and cook for a few minutes until the sauce thickens slightly.\n7. Reduce the heat to low and pour in the heavy cream. Simmer for 10-15 minutes, stirring occasionally, until the chicken is cooked through and the sauce has thickened.\n8. Season with salt to taste.\n9. Garnish with fresh cilantro leaves and serve hot with cooked basmati rice."
+},
+  {
+  "name": "Nasi Lemak",
+  "ingredients": [
+    "2 cups jasmine rice",
+    "1 cup coconut milk",
+    "1 cup water",
+    "2 pandan leaves, tied in a knot",
+    "1 teaspoon salt",
+    "4 tablespoons vegetable oil",
+    "4 shallots, thinly sliced",
+    "2 cloves garlic, minced",
+    "1 tablespoon dried anchovies",
+    "2 tablespoons roasted peanuts",
+    "2 hard-boiled eggs, halved",
+    "Cucumber slices, for garnish",
+    "Sambal sauce, for serving"
+  ],
+  "instructions": "1. Rinse the jasmine rice until the water runs clear, then drain well.\n2. In a saucepan, combine the rinsed rice, coconut milk, water, pandan leaves, and salt. Bring to a boil over medium heat.\n3. Reduce the heat to low, cover the saucepan, and let the rice simmer for about 15-20 minutes, or until the liquid is absorbed and the rice is cooked.\n4. While the rice is cooking, heat the vegetable oil in a frying pan over medium heat. Add the shallots and garlic, and sauté until golden brown and crispy. Remove and set aside for garnish.\n5. In the same pan, fry the dried anchovies until crispy. Remove and set aside for garnish.\n6. In the same pan, toast the roasted peanuts until fragrant. Remove and set aside for garnish.\n7. Once the rice is cooked, fluff it with a fork and remove the pandan leaves.\n8. Serve the nasi lemak by placing a scoop of rice on a plate. Garnish with the fried shallots, garlic, dried anchovies, roasted peanuts, hard-boiled eggs, and cucumber slices.\n9. Serve with sambal sauce on the side.\n10. Enjoy your delicious Nasi Lemak!"
+},
+  {
+  "name": "Rendang",
+  "ingredients": [
+    "500g beef, cut into cubes",
+    "4 tablespoons rendang paste",
+    "1 can coconut milk",
+    "2 stalks lemongrass, bruised",
+    "4 kaffir lime leaves",
+    "2 tablespoons tamarind paste",
+    "2 tablespoons palm sugar",
+    "Salt, to taste",
+    "Water, as needed",
+    "Cooking oil"
+  ],
+  "instructions": "1. Heat some cooking oil in a large pot over medium heat.\n2. Add the rendang paste and stir-fry for a few minutes until fragrant.\n3. Add the beef cubes and stir-fry until they are browned on all sides.\n4. Pour in the coconut milk and add the lemongrass, kaffir lime leaves, tamarind paste, palm sugar, and a pinch of salt.\n5. Stir well to combine all the ingredients.\n6. Reduce the heat to low, cover the pot, and let the rendang simmer for about 2-3 hours, or until the beef is tender and the sauce has thickened. Stir occasionally and add water if needed to prevent the sauce from drying out.\n7. Once the beef is tender and the sauce has thickened to your desired consistency, taste and adjust the seasoning with salt if needed.\n8. Serve the rendang hot with steamed rice.\n9. Enjoy your delicious Rendang!"
+},
+  {
+  "name": "Mee Goreng",
+  "ingredients": [
+    "200g yellow noodles",
+    "2 tablespoons cooking oil",
+    "2 cloves garlic, minced",
+    "1 small onion, sliced",
+    "100g chicken breast, sliced",
+    "100g shrimp, peeled and deveined",
+    "1 cup bean sprouts",
+    "1/2 cup cabbage, shredded",
+    "1/4 cup carrots, julienned",
+    "2 tablespoons tomato ketchup",
+    "1 tablespoon chili sauce",
+    "1 tablespoon soy sauce",
+    "1 tablespoon oyster sauce",
+    "1/2 teaspoon curry powder",
+    "Salt and pepper to taste",
+    "Fried shallots for garnish",
+    "Lime wedges for serving"
+  ],
+  "instructions": "1. Cook the yellow noodles according to the package instructions, then drain and set aside.\n2. Heat the cooking oil in a large pan or wok over medium heat.\n3. Add the minced garlic and sliced onion, and sauté until fragrant and golden brown.\n4. Add the chicken breast and shrimp, and cook until they are cooked through.\n5. Add the bean sprouts, shredded cabbage, and julienned carrots, and stir-fry for a few minutes until the vegetables are slightly wilted.\n6. In a small bowl, mix together the tomato ketchup, chili sauce, soy sauce, oyster sauce, curry powder, salt, and pepper.\n7. Pour the sauce mixture over the cooked ingredients in the pan and stir well to coat everything.\n8. Add the cooked yellow noodles to the pan and toss them with the sauce and ingredients until well combined.\n9. Continue stir-frying for a few more minutes until the noodles are heated through.\n10. Remove from heat and garnish with fried shallots.\n11. Serve hot with lime wedges on the side."
+},
+  {
+  "name": "Beef Stroganoff",
+  "ingredients": [
+    "500g beef sirloin, thinly sliced",
+    "2 tablespoons butter",
+    "1 onion, thinly sliced",
+    "2 cloves garlic, minced",
+    "250g mushrooms, sliced",
+    "1 cup beef broth",
+    "2 tablespoons all-purpose flour",
+    "1 cup sour cream",
+    "1 tablespoon Dijon mustard",
+    "Salt and pepper to taste",
+    "Fresh parsley for garnish",
+    "Egg noodles or rice for serving"
+  ],
+  "instructions": "1. In a large skillet, melt the butter over medium-high heat.\n2. Add the sliced beef sirloin to the skillet and cook until browned. Remove the beef from the skillet and set aside.\n3. In the same skillet, add the sliced onion and minced garlic. Sauté until the onion is translucent.\n4. Add the sliced mushrooms to the skillet and cook until they release their moisture and become tender.\n5. In a small bowl, whisk together the beef broth and all-purpose flour until smooth.\n6. Pour the broth mixture into the skillet with the onions and mushrooms. Stir well and bring to a simmer.\n7. Return the cooked beef to the skillet and stir to combine with the sauce.\n8. Reduce the heat to low and stir in the sour cream and Dijon mustard. Heat gently until the sauce is warmed through, but do not boil.\n9. Season with salt and pepper to taste.\n10. Serve the Beef Stroganoff over egg noodles or rice.\n11. Garnish with fresh parsley before serving."
+},
+
+
+
+
+
 
   
 
