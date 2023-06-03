@@ -147,7 +147,91 @@ dishes = [
     "name": "Roasted Vegetable Medley",
     "ingredients": ["assorted vegetables (such as bell peppers, zucchini, carrots, red onion, cherry tomatoes)", "olive oil", "garlic", "dried herbs (such as thyme, rosemary, oregano)", "salt", "black pepper"],
     "instructions": "1. Preheat the oven to 425°F (220°C).\n2. Wash and chop the assorted vegetables into bite-sized pieces.\n3. In a large bowl, toss the chopped vegetables with olive oil to coat them evenly.\n4. Mince garlic cloves and add them to the bowl.\n5. Sprinkle dried herbs, salt, and black pepper over the vegetables. Toss well to distribute the seasonings.\n6. Spread the seasoned vegetables in a single layer on a baking sheet.\n7. Place the baking sheet in the preheated oven and roast the vegetables for about 25-30 minutes, or until they are tender and slightly caramelized, stirring once or twice during cooking.\n8. Remove the roasted vegetable medley from the oven and let it cool slightly.\n9. Transfer the vegetables to a serving dish and garnish with fresh herbs, if desired.\n10. Serve the roasted vegetable medley as a delicious side dish or add it to salads, pasta, or grain bowls.\n11. Enjoy the flavorful and nutritious roasted vegetable medley!"
-      },
+      }, 
+     {
+  "name": "Mediterranean Quinoa Salad",
+  "ingredients": [
+    "1 cup quinoa",
+    "2 cups vegetable broth",
+    "1 cucumber, diced",
+    "1 red bell pepper, diced",
+    "1/2 red onion, finely chopped",
+    "1/2 cup Kalamata olives, pitted and halved",
+    "1/2 cup cherry tomatoes, halved",
+    "1/4 cup fresh parsley, chopped",
+    "1/4 cup fresh mint, chopped",
+    "Juice of 1 lemon",
+    "2 tablespoons extra virgin olive oil",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Rinse the quinoa under cold water to remove any bitter coating.\n2. In a medium saucepan, bring the vegetable broth to a boil. Add the rinsed quinoa and reduce the heat to low. Cover and simmer for about 15-20 minutes, or until the quinoa is cooked and the liquid is absorbed. Fluff with a fork and let it cool.\n3. In a large bowl, combine the cooked quinoa, diced cucumber, diced red bell pepper, finely chopped red onion, Kalamata olives, cherry tomatoes, chopped parsley, and chopped mint.\n4. In a small bowl, whisk together the lemon juice, extra virgin olive oil, salt, and pepper.\n5. Pour the dressing over the quinoa salad and toss well to combine.\n6. Adjust the seasoning if needed.\n7. Serve the Mediterranean quinoa salad chilled or at room temperature. Enjoy!"
+},
+  {
+  "name": "Kung Pao Chicken",
+  "ingredients": [
+    "1 lb boneless, skinless chicken breasts, cut into bite-sized cubes",
+    "1/2 cup unsalted peanuts",
+    "1 red bell pepper, diced",
+    "1 green bell pepper, diced",
+    "1/2 cup diced celery",
+    "1/2 cup diced carrots",
+    "3 cloves garlic, minced",
+    "2 tablespoons vegetable oil",
+    "2 tablespoons soy sauce",
+    "2 tablespoons rice vinegar",
+    "1 tablespoon hoisin sauce",
+    "1 tablespoon cornstarch",
+    "1 tablespoon Szechuan peppercorns (optional)",
+    "1 teaspoon sugar",
+    "1/2 teaspoon red pepper flakes (adjust to taste)",
+    "Salt to taste",
+    "Cooked rice, for serving"
+  ],
+  "instructions": "1. In a small bowl, whisk together soy sauce, rice vinegar, hoisin sauce, cornstarch, sugar, and a pinch of salt. Set aside.\n2. Heat vegetable oil in a wok or large skillet over medium-high heat.\n3. Add the minced garlic and Szechuan peppercorns (if using) to the hot oil. Stir-fry for about 30 seconds until fragrant.\n4. Add the chicken cubes to the wok and stir-fry until they are cooked through and slightly browned.\n5. Add the diced bell peppers, celery, and carrots to the wok. Stir-fry for another 2-3 minutes until the vegetables are crisp-tender.\n6. Pour the prepared sauce over the chicken and vegetables in the wok. Stir well to coat everything evenly.\n7. Add the peanuts and red pepper flakes to the wok and stir-fry for an additional minute.\n8. Taste and adjust the seasoning with salt and red pepper flakes if desired.\n9. Remove from heat and serve the Kung Pao Chicken over cooked rice. You will definitely like it!"
+},
+  {
+  "name": "Mapo Tofu",
+  "ingredients": [
+    "1 block (14 oz) firm tofu, cut into small cubes",
+    "1/2 lb ground pork (optional)",
+    "2 tablespoons vegetable oil",
+    "2 cloves garlic, minced",
+    "1 tablespoon ginger, minced",
+    "2 tablespoons doubanjiang (spicy bean paste)",
+    "1 tablespoon fermented black beans, rinsed and chopped",
+    "1 cup chicken or vegetable broth",
+    "2 tablespoons soy sauce",
+    "1 teaspoon sugar",
+    "1/2 teaspoon Szechuan peppercorns, crushed",
+    "2 green onions, chopped",
+    "1 tablespoon cornstarch mixed with 2 tablespoons water",
+    "Cooked rice, for serving"
+  ],
+  "instructions": "1. Heat vegetable oil in a large wok or skillet over medium heat.\n2. Add minced garlic and ginger to the hot oil and stir-fry for about 1 minute until fragrant.\n3. If using ground pork, add it to the wok and cook until browned and cooked through.\n4. Add doubanjiang (spicy bean paste) and fermented black beans to the wok. Stir-fry for another minute.\n5. Add tofu cubes to the wok and gently stir to coat them with the sauce.\n6. Pour in chicken or vegetable broth and bring to a simmer. Let it cook for about 5 minutes to allow the flavors to meld.\n7. Stir in soy sauce, sugar, and crushed Szechuan peppercorns.\n8. Add the chopped green onions and let them cook for another minute.\n9. Stir in the cornstarch-water mixture to thicken the sauce. Cook for an additional minute until the sauce has thickened.\n10. Remove from heat and serve the Mapo Tofu over steamed rice. Have a nice meal!"
+},
+  {
+  "name": "Sweet and Sour Pork",
+  "ingredients": [
+    "1 lb pork tenderloin, cut into bite-sized pieces",
+    "1/2 cup pineapple chunks",
+    "1/2 cup bell peppers, cut into chunks",
+    "1/2 cup onion, cut into chunks",
+    "2 tablespoons vegetable oil",
+    "3 tablespoons ketchup",
+    "2 tablespoons vinegar",
+    "2 tablespoons soy sauce",
+    "2 tablespoons sugar",
+    "1 tablespoon cornstarch mixed with 2 tablespoons water",
+    "Salt and pepper to taste",
+    "Cooked rice, for serving"
+  ],
+  "instructions": "1. Heat vegetable oil in a large skillet or wok over medium-high heat.\n2. Season the pork pieces with salt and pepper, then add them to the hot skillet. Cook until browned and cooked through.\n3. Remove the cooked pork from the skillet and set aside.\n4. In the same skillet, add the onion and bell peppers. Stir-fry for a few minutes until they start to soften.\n5. In a small bowl, whisk together ketchup, vinegar, soy sauce, sugar, and cornstarch mixture.\n6. Pour the sauce mixture into the skillet with the vegetables. Stir well to combine.\n7. Add the cooked pork and pineapple chunks to the skillet. Stir gently to coat everything with the sauce.\n8. Simmer for a few minutes until the sauce thickens and coats the pork and vegetables.\n9. Remove from heat and serve hot with cooked rice."
+}, 
+
+  
+
+
+
     # Add more dishes here
     # ...
     # Up to a total of 50 dishes
