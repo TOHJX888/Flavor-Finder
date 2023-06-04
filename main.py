@@ -29,10 +29,14 @@ def suggest_dish(allergies, likes, dislikes):
     priority_dishes = []
     for dish in filtered_dishes:
         recipe_ingredients = [ingredient.lower() for ingredient in dish["ingredients"]]
-        if any(like in recipe_ingredients for like in likes_tokens):
+        if all(like in recipe_ingredients for like in likes_tokens):
             priority_dishes.append(dish)
-     #   else:
-     #       priority_dishes.append(dish)
+        else:
+            if any(like in recipe_ingredients for like in likes_tokens):
+                priority_dishes.append(dish)
+            else:
+                if not any(like in recipe_ingredients for like in likes_tokens):
+                   priority_dishes.append(dish)
     
     if priority_dishes:
         suggested_dish = random.choice(priority_dishes)
@@ -608,7 +612,1018 @@ dishes = [
     "Chopped green onions for garnish"
   ],
   "instructions": "1. In a large bowl, combine the pork cubes, soy sauce, vinegar, minced garlic, chopped onion, bay leaf, and whole peppercorns. Mix well to coat the pork in the marinade. Let it marinate for at least 30 minutes or up to overnight in the refrigerator.\n2. Heat the cooking oil in a large skillet or pot over medium heat.\n3. Remove the pork from the marinade, reserving the marinade for later use. Add the pork to the hot skillet and cook until browned on all sides.\n4. Pour in the reserved marinade and add the water. Bring to a boil, then reduce the heat to low.\n5. Cover the skillet and let the pork simmer for about 1 to 1 1/2 hours, or until the pork is tender and the flavors have melded together. Stir occasionally to prevent sticking.\n6. Once the pork is tender, remove the lid and continue cooking uncovered for about 10-15 minutes to reduce the sauce and thicken it slightly.\n7. Season with salt and pepper to taste.\n8. Transfer the Pork Adobo to a serving dish and garnish with chopped green onions.\n9. Serve hot with steamed rice.\n10. Enjoy the delicious and tangy Pork Adobo!"
+      },
+  {
+  "name": "Corn Chowder",
+  "ingredients": [
+    "4 cups corn kernels (fresh or frozen)",
+    "4 slices bacon, chopped",
+    "1 onion, diced",
+    "2 cloves garlic, minced",
+    "2 potatoes, peeled and diced",
+    "4 cups chicken or vegetable broth",
+    "1 cup milk or cream",
+    "2 tablespoons all-purpose flour",
+    "1/2 teaspoon dried thyme",
+    "Salt and pepper to taste",
+    "Chopped fresh parsley for garnish"
+  ],
+  "instructions": "1. In a large pot or Dutch oven, cook the chopped bacon over medium heat until crispy. Remove the bacon with a slotted spoon and set aside for later use. Leave about 1 tablespoon of bacon drippings in the pot.\n2. In the same pot, add the diced onion and minced garlic. Sauté until the onion is translucent and fragrant.\n3. Add the diced potatoes and corn kernels to the pot. Stir well to combine with the onion and garlic.\n4. In a small bowl, whisk together the flour and a little bit of milk to create a slurry. This will help thicken the chowder.\n5. Pour the slurry into the pot with the corn and potatoes. Stir to coat the vegetables evenly.\n6. Gradually pour in the chicken or vegetable broth, stirring continuously. Bring the mixture to a boil.\n7. Reduce the heat to low and let the chowder simmer for about 15-20 minutes, or until the potatoes are tender.\n8. Stir in the remaining milk or cream and dried thyme. Season with salt and pepper to taste.\n9. Continue to cook the chowder for another 5 minutes, allowing the flavors to blend together.\n10. Remove the pot from heat and ladle the Corn Chowder into bowls.\n11. Garnish with crispy bacon and chopped fresh parsley.\n12. Serve hot and enjoy the creamy and comforting Corn Chowder!"
 },
+  {
+  "name": "Mexican Street Corn (Elote)",
+  "ingredients": [
+    "4 ears of corn",
+    "1/4 cup mayonnaise",
+    "1/4 cup sour cream",
+    "1/2 cup crumbled cotija cheese",
+    "1/2 teaspoon chili powder",
+    "1/4 teaspoon paprika",
+    "1/4 cup chopped fresh cilantro",
+    "1 lime, cut into wedges",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Preheat a grill or grill pan over medium-high heat.\n2. Remove the husks and silk from the corn ears, and brush them with a little bit of olive oil.\n3. Grill the corn for about 8-10 minutes, rotating occasionally, until it is lightly charred and cooked through.\n4. In a small bowl, mix together the mayonnaise, sour cream, chili powder, paprika, and a pinch of salt and pepper.\n5. Once the corn is done, remove it from the grill and let it cool slightly.\n6. Brush the mayonnaise mixture onto each ear of corn, making sure to coat it evenly.\n7. Sprinkle the crumbled cotija cheese over the corn, pressing it gently so it sticks to the mayonnaise mixture.\n8. Garnish the corn with chopped fresh cilantro.\n9. Serve the Mexican Street Corn hot, with lime wedges on the side for squeezing over the corn.\n10. Enjoy the delicious and tangy flavors of Mexican Street Corn (Elote)!"
+},
+  {
+  "name": "Cheesy Corn Casserole",
+  "ingredients": [
+    "2 cups corn kernels (fresh or frozen)",
+    "1 cup shredded cheddar cheese",
+    "1/2 cup shredded mozzarella cheese",
+    "1/2 cup sour cream",
+    "1/4 cup mayonnaise",
+    "1/4 cup diced green chilies (optional)",
+    "1/4 cup chopped green onions",
+    "1/4 cup breadcrumbs",
+    "2 tablespoons melted butter",
+    "1/2 teaspoon garlic powder",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Preheat your oven to 375°F (190°C) and lightly grease a baking dish.\n2. In a large bowl, combine the corn kernels, cheddar cheese, mozzarella cheese, sour cream, mayonnaise, diced green chilies (if using), and green onions. Mix well.\n3. Season the mixture with garlic powder, salt, and pepper to taste. Stir until all the ingredients are evenly combined.\n4. Transfer the corn mixture to the greased baking dish and spread it out in an even layer.\n5. In a separate bowl, combine the breadcrumbs and melted butter. Mix well until the breadcrumbs are coated with butter.\n6. Sprinkle the breadcrumb mixture over the top of the corn mixture in the baking dish.\n7. Bake the casserole in the preheated oven for about 25-30 minutes, or until the top is golden brown and the casserole is bubbly.\n8. Remove the casserole from the oven and let it cool for a few minutes.\n9. Serve the Cheesy Corn Casserole warm as a side dish or a main course.\n10. Enjoy the creamy and cheesy goodness of this delicious corn casserole!"
+      },
+  {
+  "name": "Banana Chocolate Smoothie",
+  "ingredients": [
+    "2 ripe bananas",
+    "1 cup milk (dairy or plant-based)",
+    "2 tablespoons cocoa powder",
+    "2 tablespoons honey or maple syrup",
+    "1/2 teaspoon vanilla extract",
+    "1 cup ice cubes"
+  ],
+  "instructions": "1. Peel the ripe bananas and break them into chunks.\n2. In a blender, combine the banana chunks, milk, cocoa powder, honey or maple syrup, and vanilla extract.\n3. Add the ice cubes to the blender.\n4. Blend all the ingredients together on high speed until smooth and creamy.\n5. Pause the blender and scrape down the sides if necessary, then continue blending until well combined.\n6. Taste the smoothie and adjust the sweetness or chocolate flavor to your liking by adding more honey, cocoa powder, or vanilla extract if desired.\n7. Once the desired consistency and taste are achieved, pour the smoothie into glasses.\n8. Optionally, garnish the smoothie with a sprinkle of cocoa powder or a banana slice.\n9. Serve immediately and enjoy the refreshing and chocolaty goodness of the Banana Chocolate Smoothie!"
+},
+  {
+  "name": "Peanut Butter Banana Toast",
+  "ingredients": [
+    "2 slices of bread (your choice of bread)",
+    "2 tablespoons peanut butter",
+    "1 ripe banana, sliced",
+    "Honey or maple syrup, for drizzling (optional)"
+  ],
+  "instructions": "1. Toast the slices of bread until golden and crisp.\n2. Spread one tablespoon of peanut butter onto each slice of toast.\n3. Arrange the sliced banana on top of one slice of the peanut butter-covered toast.\n4. Drizzle honey or maple syrup over the banana slices for added sweetness, if desired.\n5. Place the other slice of toast, peanut butter side down, on top of the banana slices to create a sandwich.\n6. Gently press the sandwich together.\n7. Slice the sandwich diagonally or into halves.\n8. Serve the Peanut Butter Banana Toast as a delicious and satisfying breakfast or snack.\n9. Enjoy the combination of creamy peanut butter, sweet bananas, and toasty bread!"
+},
+  {
+  "name": "Greek Salad",
+  "ingredients": [
+    "2 large tomatoes, diced",
+    "1 cucumber, diced",
+    "1/2 red onion, thinly sliced",
+    "1/2 cup Kalamata olives, pitted",
+    "1/2 cup crumbled feta cheese",
+    "1/4 cup extra virgin olive oil",
+    "2 tablespoons red wine vinegar",
+    "1 teaspoon dried oregano",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. In a large bowl, combine the diced tomatoes, diced cucumber, thinly sliced red onion, Kalamata olives, and crumbled feta cheese.\n2. In a separate small bowl, whisk together the extra virgin olive oil, red wine vinegar, dried oregano, salt, and pepper to make the dressing.\n3. Pour the dressing over the salad ingredients in the large bowl.\n4. Toss the salad gently to ensure all the ingredients are coated with the dressing.\n5. Taste and adjust the seasoning with more salt and pepper if needed.\n6. Let the Greek Salad sit for a few minutes to allow the flavors to meld together.\n7. Serve the salad as a refreshing and healthy side dish or as a light lunch.\n8. Enjoy the combination of fresh vegetables, tangy feta cheese, and Mediterranean flavors in this classic Greek Salad!" 
+},
+  {
+  "name": "Chicken Parmesan",
+  "ingredients": [
+    "2 boneless, skinless chicken breasts",
+    "1/2 cup breadcrumbs",
+    "1/4 cup grated Parmesan cheese",
+    "1 teaspoon dried basil",
+    "1 teaspoon dried oregano",
+    "1/2 teaspoon garlic powder",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/4 cup all-purpose flour",
+    "1 large egg, beaten",
+    "2 tablespoons olive oil",
+    "1 cup marinara sauce",
+    "1/2 cup shredded mozzarella cheese",
+    "Fresh basil leaves, for garnish"
+  ],
+  "instructions": "1. Preheat the oven to 400°F (200°C).\n2. In a shallow dish, combine the breadcrumbs, grated Parmesan cheese, dried basil, dried oregano, garlic powder, salt, and black pepper.\n3. Place the flour in a separate shallow dish and the beaten egg in another dish.\n4. Pound the chicken breasts to an even thickness, about 1/2 inch thick.\n5. Dredge each chicken breast in the flour, shaking off any excess.\n6. Dip the floured chicken breasts into the beaten egg, allowing any excess to drip off.\n7. Press the chicken breasts into the breadcrumb mixture, coating both sides evenly.\n8. In a large oven-safe skillet, heat the olive oil over medium heat.\n9. Add the breaded chicken breasts to the skillet and cook for 3-4 minutes on each side until golden brown.\n10. Remove the skillet from the heat and spoon marinara sauce over each chicken breast.\n11. Sprinkle shredded mozzarella cheese on top of each chicken breast.\n12. Transfer the skillet to the preheated oven and bake for 15-20 minutes until the chicken is cooked through and the cheese is melted and bubbly.\n13. Remove from the oven and let the chicken rest for a few minutes.\n14. Garnish with fresh basil leaves before serving.\n15. Serve the Chicken Parmesan with pasta or a side of your choice.\n16. Enjoy the crispy, cheesy goodness of Chicken Parmesan!" 
+},
+  {
+  "name": "Avocado Toast",
+  "ingredients": [
+    "2 slices of bread (your choice of bread)",
+    "1 ripe avocado",
+    "Juice of 1/2 lemon",
+    "Salt and pepper to taste",
+    "Optional toppings: sliced tomatoes, red pepper flakes, feta cheese, microgreens, etc."
+  ],
+  "instructions": "1. Toast the slices of bread until golden and crisp.\n2. Cut the ripe avocado in half, remove the pit, and scoop out the flesh into a bowl.\n3. Mash the avocado with a fork until it reaches your desired consistency.\n4. Squeeze the lemon juice over the mashed avocado and mix well to combine.\n5. Season with salt and pepper to taste.\n6. Spread the avocado mixture evenly onto each slice of toast.\n7. Add your desired toppings such as sliced tomatoes, red pepper flakes, feta cheese, or microgreens.\n8. Serve the Avocado Toast as a delicious and nutritious breakfast or snack.\n9. Enjoy the creamy avocado and crunchy toast combination!" 
+},
+  {
+  "name": "Blueberry Pancakes",
+  "ingredients": [
+    "1 cup all-purpose flour",
+    "2 tablespoons sugar",
+    "2 teaspoons baking powder",
+    "1/2 teaspoon salt",
+    "1 cup milk",
+    "1 large egg",
+    "2 tablespoons melted butter",
+    "1 teaspoon vanilla extract",
+    "1 cup fresh blueberries"
+  ],
+  "instructions": "1. In a large bowl, whisk together the flour, sugar, baking powder, and salt.\n2. In a separate bowl, whisk together the milk, egg, melted butter, and vanilla extract.\n3. Pour the wet ingredients into the dry ingredients and stir until just combined.\n4. Gently fold in the fresh blueberries.\n5. Heat a non-stick skillet or griddle over medium heat and lightly grease with butter or cooking spray.\n6. Spoon 1/4 cup of the pancake batter onto the skillet for each pancake.\n7. Cook until bubbles form on the surface of the pancake, then flip and cook for another 1-2 minutes until golden brown.\n8. Repeat with the remaining batter, adding more butter or cooking spray as needed.\n9. Serve the Blueberry Pancakes warm with maple syrup or your favorite toppings.\n10. Enjoy the fluffy pancakes bursting with juicy blueberries!" 
+},
+  {
+  "name": "Classic Chocolate Chip Cookies",
+  "ingredients": [
+    "1 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "1 cup packed brown sugar",
+    "2 large eggs",
+    "1 teaspoon vanilla extract",
+    "3 cups all-purpose flour",
+    "1 teaspoon baking soda",
+    "1/2 teaspoon salt",
+    "2 cups chocolate chips"
+  ],
+  "instructions": "1. Preheat the oven to 375°F (190°C) and line baking sheets with parchment paper.\n2. In a large bowl, cream together the softened butter, granulated sugar, and brown sugar until light and fluffy.\n3. Beat in the eggs one at a time, then stir in the vanilla extract.\n4. In a separate bowl, whisk together the flour, baking soda, and salt.\n5. Gradually add the dry ingredients to the butter mixture, mixing until just combined.\n6. Fold in the chocolate chips until evenly distributed throughout the dough.\n7. Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart.\n8. Bake for 9-11 minutes, or until the edges are golden brown.\n9. Remove from the oven and let the cookies cool on the baking sheets for a few minutes, then transfer them to wire racks to cool completely.\n10. Enjoy the classic and irresistible taste of homemade chocolate chip cookies!" 
+},
+  {
+  "name": "Chicken Noodle Soup",
+  "ingredients": [
+    "1 tablespoon olive oil",
+    "1 onion, diced",
+    "2 carrots, diced",
+    "2 celery stalks, diced",
+    "3 cloves garlic, minced",
+    "8 cups chicken broth",
+    "2 cups cooked chicken, shredded",
+    "2 cups egg noodles",
+    "1 teaspoon dried thyme",
+    "1 bay leaf",
+    "Salt and pepper to taste",
+    "Fresh parsley, chopped (for garnish)"
+  ],
+  "instructions": "1. Heat the olive oil in a large pot over medium heat.\n2. Add the diced onion, carrots, celery, and minced garlic to the pot. Cook for 5-6 minutes, until the vegetables are softened.\n3. Pour in the chicken broth and add the shredded chicken, dried thyme, and bay leaf. Season with salt and pepper to taste.\n4. Bring the soup to a boil, then reduce the heat to low and let it simmer for 15-20 minutes to allow the flavors to meld together.\n5. Add the egg noodles to the pot and cook for an additional 8-10 minutes, or until the noodles are tender.\n6. Remove the bay leaf from the soup and discard.\n7. Taste the soup and adjust the seasoning if needed.\n8. Ladle the chicken noodle soup into bowls and garnish with freshly chopped parsley.\n9. Serve hot and enjoy the comforting and nourishing flavors of homemade chicken noodle soup!" 
+},
+ {
+  "name": "Spinach and Feta Stuffed Chicken Breast",
+  "ingredients": [
+    "2 boneless, skinless chicken breasts",
+    "1 cup fresh spinach leaves",
+    "1/2 cup crumbled feta cheese",
+    "2 tablespoons olive oil",
+    "2 cloves garlic, minced",
+    "1/2 teaspoon dried oregano",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Preheat the oven to 400°F (200°C).\n2. Butterfly the chicken breasts by cutting them horizontally along one side, without cutting all the way through, and then opening them up like a book.\n3. Season the inside of the chicken breasts with salt, pepper, and dried oregano.\n4. Layer the fresh spinach leaves and crumbled feta cheese on one side of each chicken breast.\n5. Fold the other side of the chicken breast over the spinach and feta filling, pressing down gently to seal.\n6. In a small bowl, mix together the olive oil and minced garlic.\n7. Brush the olive oil and garlic mixture over the stuffed chicken breasts, coating them evenly.\n8. Place the stuffed chicken breasts in a baking dish and bake in the preheated oven for 25-30 minutes, or until the chicken is cooked through and no longer pink in the center.\n9. Remove from the oven and let the stuffed chicken breasts rest for a few minutes.\n10. Slice the stuffed chicken breasts crosswise into medallions.\n11. Serve the Spinach and Feta Stuffed Chicken Breast with a side of your choice, such as roasted vegetables or a salad.\n12. Enjoy the flavorful and tender chicken with the delicious spinach and feta filling!" 
+},
+  {
+  "name": "Banana Bread",
+  "ingredients": [
+    "2 cups all-purpose flour",
+    "1 teaspoon baking soda",
+    "1/4 teaspoon salt",
+    "1/2 cup unsalted butter, softened",
+    "1 cup granulated sugar",
+    "2 large eggs",
+    "4 ripe bananas, mashed",
+    "1/4 cup milk",
+    "1 teaspoon vanilla extract"
+  ],
+  "instructions": "1. Preheat the oven to 350°F (175°C) and grease a 9x5-inch loaf pan.\n2. In a medium bowl, whisk together the flour, baking soda, and salt.\n3. In a large bowl, cream together the softened butter and sugar until light and fluffy.\n4. Beat in the eggs one at a time, then stir in the mashed bananas.\n5. Mix in the milk and vanilla extract until well combined.\n6. Gradually add the dry ingredients to the banana mixture, stirring until just combined.\n7. Pour the batter into the prepared loaf pan and smooth the top with a spatula.\n8. Bake for 60-70 minutes, or until a toothpick inserted into the center comes out clean.\n9. Remove from the oven and let the banana bread cool in the pan for 10 minutes.\n10. Transfer the banana bread to a wire rack to cool completely before slicing and serving.\n11. Enjoy the moist and flavorful homemade banana bread as a delicious snack or breakfast treat!" 
+},
+  {
+  "name": "Garlic Shrimp Pasta",
+  "ingredients": [
+    "8 ounces linguine or spaghetti",
+    "1 pound shrimp, peeled and deveined",
+    "4 tablespoons butter, divided",
+    "4 cloves garlic, minced",
+    "1/4 teaspoon red pepper flakes (optional)",
+    "1/4 cup chicken broth",
+    "1/4 cup white wine (optional)",
+    "1/4 cup heavy cream",
+    "1/4 cup grated Parmesan cheese",
+    "Salt and pepper to taste",
+    "Chopped fresh parsley for garnish"
+  ],
+  "instructions": "1. Cook the linguine or spaghetti according to package instructions until al dente. Drain and set aside.\n2. In a large skillet, melt 2 tablespoons of butter over medium-high heat.\n3. Add the shrimp to the skillet and cook for 2-3 minutes per side until pink and cooked through. Remove the shrimp from the skillet and set aside.\n4. In the same skillet, melt the remaining 2 tablespoons of butter.\n5. Add the minced garlic and red pepper flakes (if using) to the skillet. Sauté for about 1 minute until fragrant.\n6. Pour in the chicken broth and white wine (if using), and let it simmer for 2-3 minutes to reduce slightly.\n7. Stir in the heavy cream and grated Parmesan cheese. Cook for another 2-3 minutes until the sauce thickens.\n8. Season with salt and pepper to taste.\n9. Add the cooked shrimp back to the skillet and toss to coat with the sauce.\n10. Add the cooked linguine or spaghetti to the skillet and toss to combine with the shrimp and sauce.\n11. Garnish with chopped fresh parsley.\n12. Serve the garlic shrimp pasta hot and enjoy!" 
+},
+  {
+  "name": "Beef and Broccoli Stir-Fry",
+  "ingredients": [
+    "1 pound flank steak, thinly sliced",
+    "2 cups broccoli florets",
+    "1 red bell pepper, sliced",
+    "1 onion, sliced",
+    "3 cloves garlic, minced",
+    "1/4 cup soy sauce",
+    "2 tablespoons oyster sauce",
+    "1 tablespoon cornstarch",
+    "1 tablespoon vegetable oil",
+    "1/2 teaspoon sesame oil",
+    "Salt and pepper to taste",
+    "Cooked rice or noodles for serving"
+  ],
+  "instructions": "1. In a small bowl, whisk together soy sauce, oyster sauce, cornstarch, and a pinch of salt and pepper.\n2. In a large skillet or wok, heat vegetable oil over high heat.\n3. Add minced garlic and cook for 30 seconds until fragrant.\n4. Add thinly sliced flank steak to the skillet and stir-fry for 2-3 minutes until browned and cooked through. Remove the beef from the skillet and set aside.\n5. In the same skillet, add broccoli florets, sliced bell pepper, and onion. Stir-fry for 3-4 minutes until the vegetables are tender-crisp.\n6. Return the cooked beef to the skillet and pour the sauce mixture over the ingredients.\n7. Stir well to coat the beef and vegetables in the sauce. Cook for an additional 1-2 minutes until the sauce thickens.\n8. Drizzle sesame oil over the stir-fry and give it a final toss.\n9. Remove from heat and serve the Beef and Broccoli Stir-Fry over cooked rice or noodles.\n10. Enjoy this flavorful and satisfying dish!"
+},
+  {
+  "name": "Broccoli Corn Stir-Fry",
+  "ingredients": [
+    "2 cups broccoli florets",
+    "1 cup corn kernels (fresh or frozen)",
+    "1 red bell pepper, thinly sliced",
+    "1 small onion, thinly sliced",
+    "2 cloves garlic, minced",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 teaspoon sesame oil",
+    "1 tablespoon vegetable oil",
+    "Salt and pepper to taste",
+    "Sesame seeds for garnish (optional)"
+  ],
+  "instructions": "1. Heat vegetable oil in a large skillet or wok over medium-high heat.\n2. Add the minced garlic and sauté for 1-2 minutes until fragrant.\n3. Add the sliced onion and red bell pepper to the skillet. Stir-fry for about 2-3 minutes until the vegetables start to soften.\n4. Add the broccoli florets and corn kernels to the skillet. Stir-fry for an additional 3-4 minutes until the broccoli is tender-crisp.\n5. In a small bowl, whisk together the soy sauce, oyster sauce, and sesame oil.\n6. Pour the sauce mixture over the vegetables in the skillet. Stir-fry for another minute to coat the vegetables evenly.\n7. Season with salt and pepper to taste.\n8. Remove the skillet from heat and transfer the stir-fried broccoli corn to a serving dish.\n9. Garnish with sesame seeds if desired.\n10. Serve the delicious and vibrant Broccoli Corn Stir-Fry as a side dish or with steamed rice for a complete meal.\n11. Enjoy the flavorful combination of broccoli, corn, and Asian-inspired sauces!" 
+},
+  {
+  "name": "Broccoli Corn Soup",
+  "ingredients": [
+    "2 cups broccoli florets",
+    "1 cup corn kernels (fresh or frozen)",
+    "1 small onion, chopped",
+    "2 cloves garlic, minced",
+    "4 cups vegetable or chicken broth",
+    "1/2 cup heavy cream",
+    "2 tablespoons butter",
+    "1 tablespoon all-purpose flour",
+    "Salt and pepper to taste",
+    "Chopped fresh parsley for garnish (optional)"
+  ],
+  "instructions": "1. In a large pot, melt the butter over medium heat. Add the chopped onion and minced garlic, and sauté until the onion becomes translucent.\n2. Add the broccoli florets and corn kernels to the pot, and cook for a few minutes until they start to soften.\n3. Sprinkle the flour over the vegetables and stir well to coat them evenly. Cook for another minute to cook off the raw flour taste.\n4. Gradually pour in the vegetable or chicken broth, stirring constantly to avoid lumps. Bring the mixture to a boil.\n5. Reduce the heat to low and simmer for about 15-20 minutes, or until the vegetables are tender.\n6. Use an immersion blender or transfer the soup to a blender, and blend until smooth and creamy.\n7. Return the soup to the pot (if using a blender), and stir in the heavy cream. Season with salt and pepper to taste.\n8. Heat the soup over low heat until warmed through, but do not boil.\n9. Ladle the broccoli corn soup into bowls and garnish with chopped fresh parsley if desired.\n10. Serve the comforting and creamy Broccoli Corn Soup as a satisfying meal on its own or with a side of crusty bread.\n11. Enjoy the delicious and nourishing flavors of this homemade soup!" 
+},
+  {
+  "name": "Strawberry Lemonade",
+  "ingredients": [
+    "1 cup fresh strawberries, hulled and sliced",
+    "1/2 cup freshly squeezed lemon juice",
+    "1/2 cup granulated sugar",
+    "4 cups cold water",
+    "Ice cubes",
+    "Fresh mint leaves for garnish (optional)"
+  ],
+  "instructions": "1. In a blender, combine the sliced strawberries, lemon juice, and granulated sugar. Blend until smooth and well combined.\n2. Pour the strawberry mixture into a pitcher.\n3. Add cold water to the pitcher and stir well to combine.\n4. Taste the lemonade and adjust the sweetness by adding more sugar if desired.\n5. Fill glasses with ice cubes and pour the strawberry lemonade over the ice.\n6. Garnish with fresh mint leaves if desired.\n7. Serve the refreshing and tangy Strawberry Lemonade chilled and enjoy it on a hot day!\nNote: You can also strain the strawberry mixture before adding water if you prefer a smoother consistency." 
+},
+  {
+  "name": "Broccoli and Chicken Stir-Fry",
+  "ingredients": [
+    "2 cups broccoli florets",
+    "2 boneless, skinless chicken breasts, thinly sliced",
+    "2 cloves garlic, minced",
+    "1 tablespoon soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon sesame oil",
+    "1 tablespoon vegetable oil",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Heat vegetable oil in a large skillet or wok over medium-high heat.\n2. Add minced garlic to the skillet and sauté for about 30 seconds until fragrant.\n3. Add the sliced chicken to the skillet and stir-fry until it is cooked through and lightly browned.\n4. Add the broccoli florets to the skillet and stir-fry for 3-4 minutes until they are bright green and tender-crisp.\n5. In a small bowl, whisk together soy sauce, oyster sauce, and sesame oil.\n6. Pour the sauce mixture over the chicken and broccoli in the skillet. Stir well to coat the ingredients evenly.\n7. Season with salt and pepper to taste.\n8. Continue stir-frying for another 1-2 minutes until the sauce is heated through.\n9. Remove from heat and transfer the stir-fried broccoli and chicken to a serving dish.\n10. Serve hot as a main course with steamed rice.\n11. Enjoy your delicious Broccoli and Chicken Stir-Fry!"
+},
+  {
+  "name": "Mango Lassi",
+  "ingredients": [
+    "1 ripe mango, peeled and diced",
+    "1 cup plain yogurt",
+    "1/2 cup milk",
+    "2 tablespoons sugar, or to taste",
+    "1/2 teaspoon ground cardamom (optional)",
+    "Ice cubes"
+  ],
+  "instructions": "1. In a blender, combine the diced mango, plain yogurt, milk, sugar, and ground cardamom (if using).\n2. Blend until smooth and creamy.\n3. Taste the mango lassi and adjust the sweetness by adding more sugar if desired.\n4. Add a few ice cubes to the blender and blend again until the lassi is chilled and frothy.\n5. Pour the mango lassi into glasses.\n6. Garnish with a sprinkle of ground cardamom or a mango slice if desired.\n7. Serve the delicious and refreshing Mango Lassi chilled as a perfect beverage or snack!\nNote: You can also add a splash of rose water or a squeeze of lime juice for additional flavor variations." 
+},
+  {
+  "name": "Pad Thai",
+  "ingredients": [
+    "8 oz rice noodles",
+    "2 tablespoons vegetable oil",
+    "2 cloves garlic, minced",
+    "4 oz shrimp, peeled and deveined",
+    "1 egg, lightly beaten",
+    "1 cup bean sprouts",
+    "2 green onions, sliced",
+    "1/4 cup crushed peanuts",
+    "2 tablespoons fish sauce",
+    "2 tablespoons tamarind paste",
+    "1 tablespoon sugar",
+    "1/2 teaspoon chili powder",
+    "Lime wedges for serving",
+    "Cilantro for garnish"
+  ],
+  "instructions": "1. Cook the rice noodles according to the package instructions, then drain and set aside.\n2. In a large skillet or wok, heat the vegetable oil over medium-high heat.\n3. Add the minced garlic and sauté for about 30 seconds until fragrant.\n4. Add the shrimp to the skillet and cook until pink and cooked through, about 2-3 minutes.\n5. Push the shrimp to one side of the skillet and pour the beaten egg into the other side. Scramble the egg until cooked, then mix it with the shrimp.\n6. Add the cooked rice noodles to the skillet and toss to combine with the shrimp and egg.\n7. Stir in the bean sprouts, sliced green onions, and crushed peanuts.\n8. In a small bowl, whisk together the fish sauce, tamarind paste, sugar, and chili powder. Pour the sauce over the noodles and stir well to coat.\n9. Cook for another 1-2 minutes until everything is heated through.\n10. Remove from heat and transfer the Pad Thai to serving plates.\n11. Serve hot with lime wedges on the side and garnish with cilantro.\n12. Enjoy your delicious Pad Thai!"
+},
+  {
+  "name": "Chocolate Mousse",
+  "ingredients": [
+    "8 ounces (225g) bittersweet chocolate, chopped",
+    "1 cup heavy cream",
+    "3 tablespoons granulated sugar",
+    "4 large egg whites",
+    "1/4 teaspoon cream of tartar",
+    "1/2 teaspoon vanilla extract",
+    "Whipped cream and chocolate shavings for garnish (optional)"
+  ],
+  "instructions": "1. Place the chopped chocolate in a heatproof bowl and set it aside.\n2. In a separate bowl, whip the heavy cream and 1 tablespoon of sugar until soft peaks form. Refrigerate until needed.\n3. In a clean bowl, beat the egg whites until frothy. Add the cream of tartar and continue beating until soft peaks form.\n4. Gradually add the remaining 2 tablespoons of sugar while continuing to beat until stiff peaks form.\n5. In a small saucepan, bring about an inch of water to a simmer. Place the bowl with the chocolate over the saucepan, making sure the bottom of the bowl doesn't touch the water.\n6. Stir the chocolate occasionally until it is melted and smooth. Remove the bowl from heat and let it cool slightly.\n7. Fold the whipped cream into the melted chocolate until well combined.\n8. Gently fold in the beaten egg whites, followed by the vanilla extract. Mix until the mousse is smooth and fluffy.\n9. Divide the chocolate mousse into serving glasses or bowls.\n10. Refrigerate for at least 2 hours or until set.\n11. Before serving, garnish with whipped cream and chocolate shavings if desired.\n12. Enjoy the decadent and creamy Chocolate Mousse as a delightful dessert!" 
+},
+  {
+  "name": "Apple Crisp",
+  "ingredients": [
+    "4 cups sliced apples (about 4 medium-sized apples)",
+    "1/2 cup all-purpose flour",
+    "1/2 cup rolled oats",
+    "1/2 cup packed brown sugar",
+    "1/2 teaspoon ground cinnamon",
+    "1/4 teaspoon ground nutmeg",
+    "1/4 teaspoon salt",
+    "1/2 cup cold unsalted butter, diced",
+    "Vanilla ice cream or whipped cream for serving (optional)"
+  ],
+  "instructions": "1. Preheat the oven to 375°F (190°C) and lightly grease a 9-inch square baking dish.\n2. In a large bowl, combine the sliced apples, flour, rolled oats, brown sugar, cinnamon, nutmeg, and salt. Toss until the apples are evenly coated.\n3. Transfer the apple mixture to the prepared baking dish and spread it out evenly.\n4. In the same bowl (no need to wash it), add the cold diced butter. Using your fingertips or a pastry cutter, cut the butter into the flour mixture until it resembles coarse crumbs.\n5. Sprinkle the crumb mixture evenly over the apples in the baking dish.\n6. Bake for about 30-35 minutes or until the topping is golden brown and the apples are tender.\n7. Remove the apple crisp from the oven and let it cool slightly.\n8. Serve warm, optionally with a scoop of vanilla ice cream or a dollop of whipped cream.\n9. Enjoy the warm and comforting Apple Crisp as a delicious dessert!" 
+},
+  {
+  "name": "Green Papaya Salad",
+  "ingredients": [
+    "1 small green papaya, shredded",
+    "2 cloves garlic",
+    "2 Thai chilies, chopped",
+    "2 tablespoons fish sauce",
+    "1 tablespoon palm sugar",
+    "2 tablespoons lime juice",
+    "1 cup cherry tomatoes, halved",
+    "1/4 cup roasted peanuts, crushed",
+    "2 tablespoons dried shrimp (optional)",
+    "2 tablespoons green beans, cut into 1-inch pieces",
+    "2 tablespoons carrots, julienned",
+    "Fresh cilantro for garnish"
+  ],
+  "instructions": "1. In a mortar and pestle, pound the garlic and Thai chilies into a paste.\n2. Add the fish sauce, palm sugar, and lime juice to the mortar and mix well until the sugar is dissolved.\n3. In a large mixing bowl, combine the shredded green papaya, cherry tomatoes, roasted peanuts, dried shrimp (if using), green beans, and carrots.\n4. Pour the dressing over the ingredients in the bowl and toss well to coat.\n5. Taste and adjust the seasoning by adding more fish sauce, sugar, or lime juice if desired.\n6. Transfer the green papaya salad to a serving plate.\n7. Garnish with fresh cilantro.\n8. Serve immediately and enjoy your refreshing Green Papaya Salad!"
+},
+  {
+  "name": "Parmesan Garlic Roasted Chickpeas",
+  "ingredients": [
+    "2 cans chickpeas (15 ounces each), drained and rinsed",
+    "2 tablespoons olive oil",
+    "2 tablespoons grated Parmesan cheese",
+    "1 teaspoon garlic powder",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/4 teaspoon paprika",
+    "1/4 teaspoon dried parsley"
+  ],
+  "instructions": "1. Preheat the oven to 400°F (200°C) and line a baking sheet with parchment paper.\n2. In a bowl, combine the drained and rinsed chickpeas, olive oil, grated Parmesan cheese, garlic powder, salt, black pepper, paprika, and dried parsley. Toss well to coat the chickpeas evenly.\n3. Spread the seasoned chickpeas in a single layer on the prepared baking sheet.\n4. Bake for 25-30 minutes, stirring once or twice during baking, until the chickpeas are golden brown and crispy.\n5. Remove the baking sheet from the oven and let the roasted chickpeas cool for a few minutes.\n6. Serve the Parmesan Garlic Roasted Chickpeas as a tasty and nutritious snack. Enjoy them on their own or as a crunchy addition to salads or soups!\nNote: The roasted chickpeas are best enjoyed on the day they are made, as they can lose their crispiness over time." 
+},
+  {
+  "name": "Green Papaya Salad",
+  "ingredients": [
+    "1 small green papaya, shredded",
+    "2 cloves garlic",
+    "2 Thai chilies, chopped",
+    "2 tablespoons fish sauce",
+    "1 tablespoon palm sugar",
+    "2 tablespoons lime juice",
+    "1 cup cherry tomatoes, halved",
+    "1/4 cup roasted peanuts, crushed",
+    "2 tablespoons dried shrimp (optional)",
+    "2 tablespoons green beans, cut into 1-inch pieces",
+    "2 tablespoons carrots, julienned",
+    "Fresh cilantro for garnish"
+  ],
+  "instructions": "1. In a mortar and pestle, pound the garlic and Thai chilies into a paste.\n2. Add the fish sauce, palm sugar, and lime juice to the mortar and mix well until the sugar is dissolved.\n3. In a large mixing bowl, combine the shredded green papaya, cherry tomatoes, roasted peanuts, dried shrimp (if using), green beans, and carrots.\n4. Pour the dressing over the ingredients in the bowl and toss well to coat.\n5. Taste and adjust the seasoning by adding more fish sauce, sugar, or lime juice if desired.\n6. Transfer the green papaya salad to a serving plate.\n7. Garnish with fresh cilantro.\n8. Serve immediately and enjoy your refreshing Green Papaya Salad!"
+},
+  {
+  "name": "Caprese Skewers",
+  "ingredients": [
+    "Cherry tomatoes",
+    "Fresh basil leaves",
+    "Fresh mozzarella balls",
+    "Balsamic glaze",
+    "Extra virgin olive oil",
+    "Salt and pepper"
+  ],
+  "instructions": "1. Prepare the ingredients by rinsing the cherry tomatoes and basil leaves. Drain and pat dry the mozzarella balls.\n2. Take a toothpick or small skewer and thread on a cherry tomato, followed by a basil leaf, and then a mozzarella ball.\n3. Repeat the process until you have made enough skewers.\n4. Arrange the Caprese skewers on a serving platter or plate.\n5. Drizzle balsamic glaze and extra virgin olive oil over the skewers.\n6. Sprinkle with a pinch of salt and pepper to taste.\n7. Serve the Caprese Skewers as a delightful and colorful appetizer. They are perfect for parties, gatherings, or as a light snack!\nNote: You can also add a small folded piece of prosciutto or salami between the tomato and basil leaf for additional flavor." 
+},
+  {
+  "name": "Guacamole",
+  "ingredients": [
+    "2 ripe avocados",
+    "1 small onion, finely diced",
+    "1 ripe tomato, diced",
+    "1 jalapeño pepper, seeded and minced",
+    "2 tablespoons fresh lime juice",
+    "1/4 cup chopped fresh cilantro",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon ground cumin",
+    "1/4 teaspoon garlic powder",
+    "Tortilla chips, for serving"
+  ],
+  "instructions": "1. Cut the avocados in half lengthwise and remove the pit. Scoop the avocado flesh into a bowl.\n2. Mash the avocados with a fork until you achieve your desired consistency (smooth or chunky).\n3. Add the finely diced onion, diced tomato, minced jalapeño pepper, lime juice, chopped cilantro, salt, cumin, and garlic powder to the bowl with the mashed avocados.\n4. Mix all the ingredients together until well combined.\n5. Taste the guacamole and adjust the seasoning if needed, adding more salt or lime juice to taste.\n6. Transfer the guacamole to a serving bowl.\n7. Serve the delicious and creamy guacamole with tortilla chips as a classic and crowd-pleasing snack or appetizer!\nNote: You can also customize your guacamole by adding additional ingredients like diced garlic, chopped jalapeños, or diced bell peppers for extra flavor and heat." 
+},
+  {
+  "name": "Panang Curry",
+  "ingredients": [
+    "1 pound chicken (or beef, pork, or tofu), thinly sliced",
+    "2 tablespoons panang curry paste",
+    "1 can (13.5 ounces) coconut milk",
+    "1 cup chicken broth",
+    "1 red bell pepper, thinly sliced",
+    "1 small onion, thinly sliced",
+    "1 tablespoon fish sauce",
+    "1 tablespoon palm sugar or brown sugar",
+    "1 tablespoon lime juice",
+    "1/4 cup fresh Thai basil leaves",
+    "Cooked rice for serving"
+  ],
+  "instructions": "1. In a wok or large skillet, heat some oil over medium heat. Add the panang curry paste and stir-fry for about 1 minute until fragrant.\n2. Add the sliced chicken to the wok and cook until browned and cooked through.\n3. Pour in the coconut milk and chicken broth, and stir well to combine. Bring the mixture to a gentle simmer.\n4. Add the sliced red bell pepper and onion to the curry, and cook for about 5 minutes until the vegetables are tender-crisp.\n5. Stir in the fish sauce, palm sugar, and lime juice. Taste and adjust the seasoning as needed.\n6. Remove the panang curry from the heat and stir in the fresh Thai basil leaves.\n7. Serve the Panang Curry over cooked rice.\n8. Enjoy your flavorful and aromatic Panang Curry!"
+},
+  {
+  "name": "Hummus with Pita Chips",
+  "ingredients": [
+    "1 can chickpeas (15 ounces), drained and rinsed",
+    "3 tablespoons tahini",
+    "2 tablespoons lemon juice",
+    "2 tablespoons olive oil",
+    "2 cloves garlic, minced",
+    "1/2 teaspoon cumin",
+    "Salt to taste",
+    "Water (if needed for consistency)",
+    "Pita bread, cut into triangles",
+    "Olive oil for brushing"
+  ],
+  "instructions": "1. In a food processor, combine the drained and rinsed chickpeas, tahini, lemon juice, olive oil, minced garlic, cumin, and a pinch of salt.\n2. Process the mixture until smooth and creamy. If needed, add water gradually to achieve your desired consistency.\n3. Taste the hummus and adjust the seasoning by adding more salt or lemon juice if desired.\n4. Transfer the hummus to a serving bowl.\n5. Preheat the oven to 350°F (175°C).\n6. Brush the pita bread triangles with olive oil on both sides.\n7. Place the pita triangles on a baking sheet and bake for about 10-12 minutes, or until crispy and golden brown.\n8. Remove the pita chips from the oven and let them cool.\n9. Serve the homemade hummus with the freshly baked pita chips.\n10. Enjoy the creamy and flavorful Hummus with Pita Chips as a delicious and healthy snack or appetizer!" 
+},
+  {
+  "name": "Mango Sticky Rice",
+  "ingredients": [
+    "1 cup sticky rice",
+    "2 ripe mangoes",
+    "1 cup coconut milk",
+    "1/2 cup sugar",
+    "1/4 teaspoon salt",
+    "Toasted sesame seeds (for garnish)"
+  ],
+  "instructions": "1. Soak the sticky rice in water for at least 4 hours or overnight.\n2. Rinse the soaked rice and drain well. Place the rice in a steamer basket lined with cheesecloth or a muslin cloth.\n3. Steam the rice over medium-high heat for about 20-25 minutes until cooked and tender.\n4. While the rice is steaming, prepare the coconut sauce. In a saucepan, heat the coconut milk, sugar, and salt over medium heat. Stir until the sugar dissolves and the mixture is heated through. Remove from heat.\n5. Once the rice is cooked, transfer it to a bowl and pour half of the coconut sauce over the rice. Mix well to coat the rice with the sauce.\n6. Let the rice sit for a few minutes to absorb the sauce.\n7. Peel and slice the ripe mangoes.\n8. Serve the mango slices with the sticky rice, drizzle with the remaining coconut sauce, and sprinkle with toasted sesame seeds.\n9. Enjoy your sweet and creamy Mango Sticky Rice!"
+},
+  {
+  "name": "Massaman Curry",
+  "ingredients": [
+    "1 pound beef (or chicken, pork, or tofu), cut into bite-sized pieces",
+    "2 tablespoons massaman curry paste",
+    "1 can (13.5 ounces) coconut milk",
+    "1 cup beef or chicken broth",
+    "1 large potato, peeled and cut into chunks",
+    "1 small onion, sliced",
+    "1/2 cup roasted peanuts",
+    "2 tablespoons fish sauce",
+    "1 tablespoon tamarind paste",
+    "1 tablespoon palm sugar or brown sugar",
+    "1 cinnamon stick",
+    "2 cardamom pods",
+    "2 star anise",
+    "Cooked rice for serving"
+  ],
+  "instructions": "1. In a large pot or Dutch oven, heat some oil over medium heat. Add the massaman curry paste and stir-fry for about 1 minute until fragrant.\n2. Add the beef to the pot and cook until browned on all sides.\n3. Pour in the coconut milk and beef or chicken broth, and stir well to combine. Bring the mixture to a gentle simmer.\n4. Add the potato chunks, sliced onion, roasted peanuts, fish sauce, tamarind paste, and sugar to the curry. Stir to combine.\n5. Tie the cinnamon stick, cardamom pods, and star anise in a piece of cheesecloth or place them in a spice bag. Add the spice bundle to the pot.\n6. Cover the pot and let the curry simmer for about 1 hour, or until the beef and potatoes are tender.\n7. Remove the spice bundle from the curry.\n8. Serve the Massaman Curry over cooked rice.\n9. Enjoy the rich and flavorful Massaman Curry!"
+},
+  {
+  "name": "General Tso's Chicken",
+  "ingredients": [
+    "1 pound boneless, skinless chicken thighs, cut into bite-sized pieces",
+    "1/2 cup cornstarch",
+    "2 tablespoons vegetable oil",
+    "3 cloves garlic, minced",
+    "1 tablespoon ginger, minced",
+    "1/4 cup soy sauce",
+    "1/4 cup hoisin sauce",
+    "2 tablespoons rice vinegar",
+    "2 tablespoons honey",
+    "1 tablespoon cornstarch, dissolved in 2 tablespoons water",
+    "1/2 teaspoon red pepper flakes (adjust to taste)",
+    "1/4 cup green onions, chopped (for garnish)",
+    "Sesame seeds (for garnish)"
+  ],
+  "instructions": "1. In a shallow bowl, coat the chicken pieces with cornstarch.\n2. Heat the vegetable oil in a large skillet or wok over medium-high heat.\n3. Add the coated chicken pieces to the skillet and cook until golden brown and crispy. Remove from the skillet and set aside.\n4. In the same skillet, add the minced garlic and ginger. Sauté for a minute until fragrant.\n5. In a small bowl, whisk together the soy sauce, hoisin sauce, rice vinegar, honey, and cornstarch-water mixture.\n6. Pour the sauce mixture into the skillet and bring to a simmer. Cook until the sauce thickens.\n7. Add the cooked chicken pieces back into the skillet and toss to coat them with the sauce.\n8. Sprinkle with red pepper flakes and toss to combine.\n9. Remove from heat and garnish with chopped green onions and sesame seeds.\n10. Serve hot with steamed rice.\n11. Enjoy your delicious General Tso's Chicken!"
+},
+  {
+  "name": "Tomato and Egg Stir-Fry",
+  "ingredients": [
+    "3 tomatoes, diced",
+    "4 eggs, beaten",
+    "2 green onions, chopped",
+    "2 cloves garlic, minced",
+    "1 tablespoon soy sauce",
+    "1/2 teaspoon sugar",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "2 tablespoons vegetable oil"
+  ],
+  "instructions": "1. Heat vegetable oil in a large skillet or wok over medium heat.\n2. Add minced garlic and chopped green onions to the skillet. Sauté for 1-2 minutes until fragrant.\n3. Add diced tomatoes to the skillet. Cook for 3-4 minutes until the tomatoes start to soften.\n4. In a small bowl, whisk together beaten eggs, soy sauce, sugar, salt, and black pepper.\n5. Push the tomatoes to one side of the skillet and pour the beaten egg mixture into the empty space.\n6. Allow the eggs to cook undisturbed for a few seconds until they start to set around the edges.\n7. Gently scramble the eggs with a spatula, incorporating them with the tomatoes.\n8. Continue cooking for another 2-3 minutes until the eggs are fully cooked.\n9. Season with additional salt and pepper to taste.\n10. Remove from heat and transfer the Tomato and Egg Stir-Fry to a serving dish.\n11. Serve hot as a side dish or over steamed rice.\n12. Enjoy your delicious Tomato and Egg Stir-Fry!"
+},
+  {
+  "name": "Tomato Bruschetta",
+  "ingredients": [
+    "4 ripe tomatoes, diced",
+    "2 cloves garlic, minced",
+    "1/4 cup fresh basil leaves, chopped",
+    "2 tablespoons extra virgin olive oil",
+    "1 tablespoon balsamic vinegar",
+    "Salt and pepper to taste",
+    "Baguette or bread slices"
+  ],
+  "instructions": "1. In a bowl, combine the diced tomatoes, minced garlic, chopped basil leaves, olive oil, and balsamic vinegar.\n2. Season the mixture with salt and pepper to taste and stir well.\n3. Allow the tomato mixture to marinate for about 15-20 minutes to let the flavors meld together.\n4. Preheat the oven to broil.\n5. Slice the baguette or bread into thin slices and arrange them on a baking sheet.\n6. Toast the bread slices under the broiler for a few minutes until they turn golden and crispy.\n7. Remove the toasted bread slices from the oven and let them cool slightly.\n8. Spoon the tomato mixture onto each toasted bread slice, distributing it evenly.\n9. Garnish with additional basil leaves, if desired.\n10. Serve the Tomato Bruschetta as an appetizer or light snack.\n11. Enjoy the vibrant flavors of the Tomato Bruschetta!"
+},
+  {
+  "name": "Spicy Black Bean Burger",
+  "ingredients": [
+    "1 can black beans, drained and rinsed",
+    "1/2 cup bread crumbs",
+    "1/4 cup red bell pepper, finely chopped",
+    "1/4 cup onion, finely chopped",
+    "2 cloves garlic, minced",
+    "1 teaspoon cumin",
+    "1 teaspoon chili powder",
+    "1/2 teaspoon paprika",
+    "1/4 teaspoon cayenne pepper (optional)",
+    "1/4 cup cilantro, chopped",
+    "1 tablespoon lime juice",
+    "Salt and pepper to taste",
+    "Burger buns",
+    "Toppings of your choice (lettuce, tomato, onion, avocado, etc.)"
+  ],
+  "instructions": "1. In a bowl, mash the black beans with a fork or potato masher until mostly smooth.\n2. Add the bread crumbs, red bell pepper, onion, garlic, cumin, chili powder, paprika, cayenne pepper (if using), cilantro, lime juice, salt, and pepper to the mashed black beans.\n3. Mix well until all the ingredients are combined.\n4. Divide the mixture into equal-sized patties, shaping them with your hands.\n5. Heat a grill pan or skillet over medium heat and lightly grease it with oil.\n6. Cook the black bean patties for about 4-5 minutes per side, or until they are heated through and develop a golden crust.\n7. Toast the burger buns, if desired.\n8. Place each black bean patty on a burger bun and add your preferred toppings.\n9. Serve the Spicy Black Bean Burgers hot and enjoy!\n10. These burgers are also delicious served with a side of fries or a salad."
+},
+  {
+  "name": "Teriyaki Chicken Burger",
+  "ingredients": [
+    "1 pound ground chicken",
+    "1/4 cup teriyaki sauce",
+    "2 tablespoons breadcrumbs",
+    "1 tablespoon grated ginger",
+    "1 clove garlic, minced",
+    "1/2 teaspoon sesame oil",
+    "1/4 teaspoon black pepper",
+    "4 burger buns",
+    "Lettuce leaves",
+    "Sliced tomatoes",
+    "Sliced onions",
+    "Mayonnaise (optional)"
+  ],
+  "instructions": "1. In a bowl, combine the ground chicken, teriyaki sauce, breadcrumbs, grated ginger, minced garlic, sesame oil, and black pepper.\n2. Mix well until all the ingredients are evenly incorporated.\n3. Divide the chicken mixture into 4 equal-sized patties.\n4. Preheat a grill or skillet over medium heat and lightly grease it with oil.\n5. Cook the chicken patties for about 5-6 minutes per side, or until they are cooked through and reach an internal temperature of 165°F (74°C).\n6. While the patties are cooking, toast the burger buns if desired.\n7. Assemble the Teriyaki Chicken Burgers by placing a lettuce leaf, a chicken patty, sliced tomatoes, and sliced onions on each bun.\n8. Spread mayonnaise on the bun if desired.\n9. Serve the Teriyaki Chicken Burgers hot and enjoy!\n10. These burgers pair well with a side of sweet potato fries or a fresh salad."
+},
+  {
+  "name": "Portobello Mushroom Burger",
+  "ingredients": [
+    "4 large Portobello mushroom caps",
+    "4 burger buns",
+    "4 slices of Swiss cheese",
+    "1 red onion, sliced",
+    "4 lettuce leaves",
+    "4 tomato slices",
+    "4 tablespoons mayonnaise",
+    "2 tablespoons balsamic vinegar",
+    "2 tablespoons olive oil",
+    "2 cloves garlic, minced",
+    "1 teaspoon dried thyme",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Preheat the grill or grill pan over medium-high heat.\n2. In a small bowl, whisk together the balsamic vinegar, olive oil, minced garlic, dried thyme, salt, and pepper.\n3. Brush both sides of the Portobello mushroom caps with the marinade.\n4. Place the mushrooms on the grill and cook for 4-5 minutes per side, or until tender.\n5. While the mushrooms are grilling, toast the burger buns on the grill until lightly browned.\n6. Remove the mushrooms from the grill and let them rest for a few minutes.\n7. Assemble the burgers by spreading mayonnaise on the bottom bun, followed by a lettuce leaf, a tomato slice, a grilled Portobello mushroom cap, a slice of Swiss cheese, and some sliced red onion.\n8. Place the top bun on the burger and serve.\n9. Enjoy your delicious Portobello Mushroom Burger!"
+},
+  {
+  "name": "Loaded Cheese Fries",
+  "ingredients": [
+    "4 large potatoes, washed and cut into fries",
+    "1 cup shredded cheddar cheese",
+    "4 slices bacon, cooked and crumbled",
+    "2 green onions, thinly sliced",
+    "1/4 cup sour cream",
+    "1/4 cup mayonnaise",
+    "1 teaspoon garlic powder",
+    "1/2 teaspoon paprika",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Preheat the oven to 425°F (220°C) and line a baking sheet with parchment paper.\n2. In a large bowl, toss the cut potatoes with olive oil, salt, pepper, and paprika until evenly coated.\n3. Arrange the seasoned potato fries in a single layer on the prepared baking sheet.\n4. Bake in the preheated oven for 25-30 minutes, or until the fries are crispy and golden brown.\n5. In a small bowl, combine the sour cream, mayonnaise, garlic powder, and salt. Stir well to combine.\n6. Once the fries are cooked, remove them from the oven and sprinkle the shredded cheddar cheese over the hot fries.\n7. Return the baking sheet to the oven for 2-3 minutes, or until the cheese is melted and bubbly.\n8. Remove the loaded fries from the oven and let them cool slightly.\n9. Sprinkle the crumbled bacon and sliced green onions over the cheese-topped fries.\n10. Serve the loaded cheese fries with the sour cream and mayonnaise dipping sauce on the side.\n11. Enjoy your delicious Loaded Cheese Fries!"
+},
+  {
+  "name": "Sweet Potato Fries",
+  "ingredients": [
+    "2 large sweet potatoes",
+    "2 tablespoons olive oil",
+    "1 teaspoon paprika",
+    "1/2 teaspoon garlic powder",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/4 teaspoon cayenne pepper (optional)"
+  ],
+  "instructions": "1. Preheat the oven to 425°F (220°C) and line a baking sheet with parchment paper.\n2. Wash and peel the sweet potatoes. Cut them into even-sized fries.\n3. In a large bowl, toss the sweet potato fries with olive oil, paprika, garlic powder, salt, black pepper, and cayenne pepper (if using), until well coated.\n4. Arrange the seasoned sweet potato fries in a single layer on the prepared baking sheet.\n5. Bake in the preheated oven for 20-25 minutes, flipping halfway through, until the fries are crispy and golden brown.\n6. Remove the sweet potato fries from the oven and let them cool for a few minutes.\n7. Serve the sweet potato fries as a delicious and healthier alternative to regular fries.\n8. Enjoy your tasty Sweet Potato Fries!"
+},
+  {
+  "name": "Spicy Seasoned Fries",
+  "ingredients": [
+    "4 large russet potatoes",
+    "2 tablespoons olive oil",
+    "1 teaspoon paprika",
+    "1/2 teaspoon cayenne pepper",
+    "1/2 teaspoon garlic powder",
+    "1/2 teaspoon onion powder",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/4 teaspoon chili powder",
+    "1/4 teaspoon dried oregano"
+  ],
+  "instructions": "1. Preheat the oven to 425°F (220°C). Line a baking sheet with parchment paper.\n2. Wash and scrub the potatoes. Cut them into thin fries or wedges.\n3. In a large bowl, toss the potato slices with olive oil, paprika, cayenne pepper, garlic powder, onion powder, salt, black pepper, chili powder, and dried oregano. Make sure the potatoes are evenly coated with the spice mixture.\n4. Spread the seasoned potato slices in a single layer on the prepared baking sheet.\n5. Bake in the preheated oven for about 25-30 minutes, flipping halfway through, until the fries are crispy and golden brown.\n6. Remove from the oven and let them cool for a few minutes before serving.\n7. Enjoy the delicious and spicy seasoned fries as a snack or as a side dish with your favorite dipping sauce!"
+},
+  {
+  "name": "Hakka-style Chili Chicken",
+  "ingredients": [
+    "500g boneless chicken, cut into bite-sized pieces",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon tomato ketchup",
+    "1 tablespoon chili sauce",
+    "1 tablespoon cornstarch",
+    "1 teaspoon sugar",
+    "1/2 teaspoon black pepper",
+    "1/2 teaspoon salt",
+    "2 tablespoons vegetable oil",
+    "3 cloves garlic, minced",
+    "1 onion, thinly sliced",
+    "1 bell pepper, thinly sliced",
+    "2 green chilies, sliced",
+    "1 teaspoon sesame oil",
+    "2 spring onions, chopped (for garnish)"
+  ],
+  "instructions": "1. In a bowl, marinate the chicken with soy sauce, oyster sauce, tomato ketchup, chili sauce, cornstarch, sugar, black pepper, and salt. Mix well and let it sit for 20 minutes.\n2. Heat vegetable oil in a wok or skillet over high heat. Add minced garlic and sauté until fragrant.\n3. Add marinated chicken to the wok and stir-fry until it turns golden brown and cooked through.\n4. Push the chicken to one side of the wok and add sliced onion, bell pepper, and green chilies. Stir-fry for a few minutes until the vegetables are slightly tender.\n5. Mix everything together in the wok and drizzle with sesame oil. Stir-fry for another minute.\n6. Remove from heat and garnish with chopped spring onions.\n7. Serve hot with steamed rice or noodles.\n8. Enjoy the delicious Hakka-style Chili Chicken!"
+},
+  {
+  "name": "Hakka-style Tofu and Vegetable Stir-Fry",
+  "ingredients": [
+    "1 block firm tofu, cut into cubes",
+    "2 tablespoons vegetable oil",
+    "2 cloves garlic, minced",
+    "1-inch ginger, grated",
+    "1 onion, sliced",
+    "1 bell pepper, sliced",
+    "1 carrot, julienned",
+    "1 cup snap peas",
+    "1 cup mushrooms, sliced",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon hoisin sauce",
+    "1 teaspoon sugar",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/4 teaspoon red pepper flakes (optional)",
+    "2 green onions, chopped (for garnish)"
+  ],
+  "instructions": "1. Heat vegetable oil in a large skillet or wok over medium heat.\n2. Add minced garlic and grated ginger to the skillet. Stir-fry for a minute until fragrant.\n3. Add sliced onion, bell pepper, carrot, snap peas, and mushrooms to the skillet. Stir-fry for 3-4 minutes until the vegetables are slightly tender.\n4. Push the vegetables to one side of the skillet and add tofu cubes to the empty space. Cook for a few minutes until the tofu is lightly browned.\n5. In a small bowl, mix together soy sauce, oyster sauce, hoisin sauce, sugar, salt, black pepper, and red pepper flakes (if using). Pour the sauce mixture over the tofu and vegetables in the skillet.\n6. Stir everything together to coat the tofu and vegetables with the sauce. Cook for another 2-3 minutes until heated through.\n7. Remove from heat and garnish with chopped green onions.\n8. Serve hot with steamed rice or noodles.\n9. Enjoy the delicious Hakka-style Tofu and Vegetable Stir-Fry!"
+},
+  {
+  "name": "Hakka-style Chicken Manchurian",
+  "ingredients": [
+    "1 pound boneless chicken, cut into bite-sized pieces",
+    "2 tablespoons cornstarch",
+    "2 tablespoons all-purpose flour",
+    "1 egg, beaten",
+    "1 teaspoon ginger-garlic paste",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "2 tablespoons vegetable oil",
+    "1 onion, sliced",
+    "1 bell pepper, sliced",
+    "3 cloves garlic, minced",
+    "1-inch ginger, grated",
+    "2 tablespoons soy sauce",
+    "1 tablespoon tomato ketchup",
+    "1 tablespoon chili sauce",
+    "1 tablespoon vinegar",
+    "1 tablespoon cornstarch, dissolved in 2 tablespoons water",
+    "1 cup chicken broth",
+    "2 green onions, chopped (for garnish)"
+  ],
+  "instructions": "1. In a bowl, combine cornstarch, all-purpose flour, beaten egg, ginger-garlic paste, salt, and black pepper. Mix well to make a thick batter.\n2. Heat vegetable oil in a large skillet or wok over medium-high heat.\n3. Dip the chicken pieces in the batter, ensuring they are well coated, and add them to the hot oil. Fry until the chicken is golden brown and crispy. Remove from the skillet and set aside.\n4. In the same skillet, add sliced onion, bell pepper, minced garlic, and grated ginger. Stir-fry for 2-3 minutes until the vegetables are slightly tender.\n5. In a small bowl, mix together soy sauce, tomato ketchup, chili sauce, vinegar, and the dissolved cornstarch. Pour the sauce mixture over the vegetables in the skillet.\n6. Add chicken broth to the skillet and bring the mixture to a boil. Cook for a few minutes until the sauce thickens.\n7. Return the fried chicken pieces to the skillet and toss everything together to coat the chicken with the sauce.\n8. Cook for another 2-3 minutes until the chicken is heated through.\n9. Remove from heat and garnish with chopped green onions.\n10. Serve hot with steamed rice or noodles.\n11. Enjoy the delicious Hakka-style Chicken Manchurian!"
+},
+  {
+  "name": "Cantonese Roast Pork",
+  "ingredients": [
+    "1 pound pork belly",
+    "2 tablespoons soy sauce",
+    "1 tablespoon hoisin sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon honey",
+    "1 tablespoon Shaoxing wine",
+    "1 teaspoon five-spice powder",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon white pepper",
+    "1/4 teaspoon garlic powder"
+  ],
+  "instructions": "1. Preheat the oven to 425°F (220°C).\n2. Score the skin of the pork belly with a sharp knife, making crosshatch cuts about 1/2 inch apart.\n3. In a bowl, mix together soy sauce, hoisin sauce, oyster sauce, honey, Shaoxing wine, five-spice powder, salt, white pepper, and garlic powder to make the marinade.\n4. Place the pork belly in a large ziplock bag and pour the marinade over it. Seal the bag and massage the marinade into the meat, making sure it is evenly coated. Let it marinate in the refrigerator for at least 2 hours, or overnight for best results.\n5. Place the marinated pork belly on a baking rack set over a baking sheet, with the skin side up. Make sure the skin is dry before roasting.\n6. Roast in the preheated oven for about 45-50 minutes, or until the skin is crispy and browned, and the internal temperature reaches 145°F (63°C).\n7. Remove from the oven and let it rest for a few minutes before slicing.\n8. Slice the Cantonese roast pork into thin pieces and serve it as a main dish or as a filling for buns, noodles, or rice.\n9. Enjoy your delicious Cantonese Roast Pork!"
+},
+  {
+  "name": "Steamed Sea Bass with Ginger and Soy Sauce",
+  "ingredients": [
+    "1 whole sea bass (about 2 pounds), cleaned and scaled",
+    "1 thumb-sized piece of ginger, julienned",
+    "3 green onions, sliced into thin strips",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon Shaoxing wine",
+    "1 tablespoon sesame oil",
+    "1/2 teaspoon sugar",
+    "1/4 teaspoon white pepper"
+  ],
+  "instructions": "1. Rinse the sea bass inside and out with cold water. Pat dry with paper towels.\n2. Make a few diagonal cuts on each side of the fish, about 1 inch apart.\n3. Place the fish on a heatproof plate or steaming dish that fits inside a steamer.\n4. Sprinkle the ginger and green onions over the fish, ensuring they go into the cuts as well.\n5. In a small bowl, mix together soy sauce, oyster sauce, Shaoxing wine, sesame oil, sugar, and white pepper to make the sauce.\n6. Pour the sauce evenly over the fish.\n7. Prepare a steamer and bring the water to a boil. Carefully place the plate with the fish into the steamer.\n8. Steam the fish over high heat for about 12-15 minutes, or until the flesh is opaque and flakes easily with a fork.\n9. Carefully remove the plate from the steamer and garnish with additional green onions if desired.\n10. Serve the Steamed Sea Bass with Ginger and Soy Sauce hot with steamed rice.\n11. Enjoy your delicious Cantonese-style steamed fish!"
+},
+  {
+  "name": "Crispy Roast Pork Belly",
+  "ingredients": [
+    "2 pounds pork belly, skin-on",
+    "2 tablespoons salt",
+    "1 tablespoon five-spice powder",
+    "1 tablespoon white vinegar",
+    "1 tablespoon honey",
+    "1 tablespoon soy sauce",
+    "1 teaspoon sesame oil"
+  ],
+  "instructions": "1. Preheat the oven to 375°F (190°C).\n2. Score the pork belly skin with a sharp knife, making shallow cuts about 1 inch apart.\n3. Rub the pork belly with salt and five-spice powder, making sure to coat the meat and skin evenly.\n4. Place the pork belly on a wire rack set inside a baking tray, with the skin side up.\n5. Roast the pork belly in the preheated oven for about 1 hour, or until the skin is crispy and golden brown.\n6. In a small bowl, mix together white vinegar, honey, soy sauce, and sesame oil to make the glaze.\n7. Remove the pork belly from the oven and brush the glaze over the skin.\n8. Increase the oven temperature to 425°F (220°C) and return the pork belly to the oven for another 10-15 minutes to further crisp up the skin.\n9. Remove the pork belly from the oven and let it rest for a few minutes before slicing.\n10. Slice the Crispy Roast Pork Belly into thin pieces and serve it hot.\n11. Enjoy the delicious and flavorful Cantonese-style Crispy Roast Pork Belly!"
+},
+  {
+  "name": "Steamed Fish with Ginger and Scallions",
+  "ingredients": [
+    "1 whole fish (such as sea bass or snapper), cleaned and scaled",
+    "2 tablespoons soy sauce",
+    "2 tablespoons oyster sauce",
+    "2 tablespoons Shaoxing wine or dry sherry",
+    "1 tablespoon ginger, julienned",
+    "2 stalks scallions, sliced",
+    "1 tablespoon vegetable oil",
+    "1 teaspoon sesame oil",
+    "Salt to taste"
+  ],
+  "instructions": "1. Rinse the fish under cold water and pat it dry with paper towels.\n2. Season the fish with salt, both inside and outside.\n3. Place the fish on a heatproof dish or a steamer basket.\n4. In a small bowl, mix together soy sauce, oyster sauce, Shaoxing wine, ginger, scallions, vegetable oil, and sesame oil.\n5. Pour the sauce mixture over the fish, making sure to coat it evenly.\n6. Prepare a steamer by filling a wok or a large pot with water and bringing it to a boil.\n7. Place the dish with the fish in the steamer and cover it with a lid.\n8. Steam the fish over high heat for about 10-15 minutes, or until the flesh is opaque and easily flakes with a fork.\n9. Carefully remove the dish from the steamer and garnish with additional sliced scallions, if desired.\n10. Serve the Steamed Fish with Ginger and Scallions hot, along with steamed rice.\n11. Enjoy this delicious and healthy Cantonese-style dish!"
+},
+  {
+  "name": "Tomato Rice",
+  "ingredients": [
+    "2 cups basmati rice",
+    "4 cups water",
+    "2 tablespoons vegetable oil",
+    "1 onion, finely chopped",
+    "2 cloves garlic, minced",
+    "1 thumb-sized ginger, grated",
+    "2 tomatoes, chopped",
+    "1 teaspoon turmeric powder",
+    "1 teaspoon cumin powder",
+    "1 teaspoon coriander powder",
+    "1/2 teaspoon chili powder",
+    "Salt to taste",
+    "Fresh cilantro leaves for garnish"
+  ],
+  "instructions": "1. Rinse the basmati rice under cold water until the water runs clear. Drain and set aside.\n2. In a large pot, heat the vegetable oil over medium heat.\n3. Add the chopped onion and sauté until translucent.\n4. Add the minced garlic and grated ginger. Sauté for an additional minute.\n5. Add the chopped tomatoes and cook until they soften and release their juices.\n6. Stir in the turmeric powder, cumin powder, coriander powder, and chili powder. Mix well to coat the ingredients.\n7. Add the drained basmati rice to the pot and stir to combine with the tomato mixture.\n8. Pour in the water and season with salt to taste. Stir once more.\n9. Bring the mixture to a boil, then reduce the heat to low and cover the pot with a tight-fitting lid.\n10. Cook for about 15-20 minutes, or until the rice is tender and the liquid is absorbed.\n11. Remove from heat and let the rice rest for 5 minutes.\n12. Fluff the rice with a fork and garnish with fresh cilantro leaves before serving."
+},
+  {
+  "name": "Ayam Percik",
+  "ingredients": [
+    "1 whole chicken, cut into pieces",
+    "1 cup coconut milk",
+    "3 tablespoons tamarind juice",
+    "2 tablespoons palm sugar",
+    "1 tablespoon chili paste",
+    "2 cloves garlic, minced",
+    "1 thumb-sized ginger, grated",
+    "1 teaspoon turmeric powder",
+    "1 teaspoon coriander powder",
+    "1 teaspoon cumin powder",
+    "Salt to taste",
+    "Lime wedges for serving",
+    "Fresh cilantro leaves for garnish"
+  ],
+  "instructions": "1. In a bowl, combine the coconut milk, tamarind juice, palm sugar, chili paste, minced garlic, grated ginger, turmeric powder, coriander powder, cumin powder, and salt. Mix well to make the marinade.\n2. Place the chicken pieces in a large bowl and pour the marinade over them. Make sure the chicken is coated evenly. Marinate for at least 2 hours, or preferably overnight in the refrigerator.\n3. Preheat the grill to medium-high heat.\n4. Remove the chicken from the marinade, reserving the marinade for basting.\n5. Grill the chicken on each side for about 8-10 minutes, basting with the reserved marinade occasionally, until the chicken is cooked through and nicely charred.\n6. Remove from the grill and let the chicken rest for a few minutes.\n7. Serve the Ayam Percik hot with lime wedges on the side and garnish with fresh cilantro leaves."
+},
+  {
+  "name": "Bibimbap",
+  "ingredients": [
+    "2 cups cooked short-grain rice",
+    "1 carrot, julienned",
+    "1 zucchini, julienned",
+    "1 cup bean sprouts",
+    "1 cup spinach",
+    "4 shiitake mushrooms, sliced",
+    "1/2 pound beef, thinly sliced",
+    "4 eggs",
+    "2 tablespoons soy sauce",
+    "1 tablespoon sesame oil",
+    "1 tablespoon vegetable oil",
+    "Salt to taste",
+    "Gochujang (Korean chili paste) for serving",
+    "Sesame seeds for garnish",
+    "Sliced green onions for garnish"
+  ],
+  "instructions": "1. Cook the short-grain rice according to package instructions and set aside.\n2. In separate bowls, blanch the bean sprouts and spinach in boiling water until tender. Drain and rinse with cold water. Squeeze out excess water from the spinach and season with a pinch of salt and a drizzle of sesame oil. Set aside.\n3. Heat vegetable oil in a pan over medium heat. Add the carrots and zucchini and stir-fry for a few minutes until tender. Season with a pinch of salt. Remove from the pan and set aside.\n4. In the same pan, cook the beef until browned and cooked through. Season with soy sauce and sesame oil. Remove from the pan and set aside.\n5. In a separate pan, fry the eggs sunny-side up or to your preferred doneness.\n6. To assemble the Bibimbap, divide the cooked rice among serving bowls. Arrange the cooked vegetables and beef on top of the rice. Place a fried egg on each bowl.\n7. Serve the Bibimbap with a dollop of Gochujang, sesame seeds, and sliced green onions. Mix everything together before eating."
+},
+  {
+  "name": "Japchae",
+  "ingredients": [
+    "8 ounces sweet potato glass noodles",
+    "4 ounces beef (ribeye or sirloin), thinly sliced",
+    "1/2 onion, thinly sliced",
+    "1 carrot, julienned",
+    "1/2 red bell pepper, thinly sliced",
+    "2 cups spinach",
+    "4 shiitake mushrooms, sliced",
+    "2 cloves garlic, minced",
+    "2 tablespoons soy sauce",
+    "1 tablespoon sesame oil",
+    "1 tablespoon vegetable oil",
+    "1 tablespoon sugar",
+    "Salt and pepper to taste",
+    "Toasted sesame seeds for garnish",
+    "Green onions for garnish"
+  ],
+  "instructions": "1. Cook the sweet potato glass noodles according to package instructions. Drain and rinse with cold water. Set aside.\n2. In a bowl, marinate the beef with soy sauce, sesame oil, minced garlic, sugar, salt, and pepper. Set aside for 10-15 minutes.\n3. Heat vegetable oil in a pan over medium heat. Stir-fry the marinated beef until cooked. Remove from the pan and set aside.\n4. In the same pan, stir-fry the onion, carrot, red bell pepper, and shiitake mushrooms until tender. Season with salt and pepper.\n5. Blanch the spinach in boiling water for a minute. Drain and rinse with cold water. Squeeze out excess water and season with salt and sesame oil.\n6. In a large bowl, combine the cooked glass noodles, cooked vegetables, beef, and spinach. Toss well.\n7. Garnish with toasted sesame seeds and green onions.\n8. Serve the Japchae warm or at room temperature as a side dish or main course."
+},
+  {
+  "name": "Kimchi Jjigae",
+  "ingredients": [
+    "1 cup kimchi, chopped",
+    "8 ounces pork belly or shoulder, thinly sliced",
+    "1/2 onion, thinly sliced",
+    "2 cloves garlic, minced",
+    "1 tablespoon gochujang (Korean red pepper paste)",
+    "1 tablespoon gochugaru (Korean red pepper flakes)",
+    "1 tablespoon soy sauce",
+    "1 teaspoon sesame oil",
+    "1 teaspoon sugar",
+    "2 cups vegetable or beef broth",
+    "1/2 cup tofu, diced",
+    "2 green onions, chopped",
+    "1 tablespoon vegetable oil",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Heat vegetable oil in a pot over medium heat. Add the pork and cook until browned.\n2. Add the sliced onion and minced garlic. Sauté until the onion is translucent.\n3. Add the chopped kimchi, gochujang, gochugaru, soy sauce, sesame oil, and sugar. Stir well to combine.\n4. Pour in the vegetable or beef broth. Bring to a boil, then reduce the heat and simmer for about 15 minutes.\n5. Add the diced tofu and green onions. Simmer for an additional 5 minutes.\n6. Season with salt and pepper to taste.\n7. Serve the Kimchi Jjigae hot with a bowl of steamed rice.\n8. Enjoy the spicy and comforting flavors of Kimchi Jjigae!"
+},
+  {
+  "name": "Doenjang Jjigae",
+  "ingredients": [
+    "1 tablespoon vegetable oil",
+    "1 onion, sliced",
+    "2 cloves garlic, minced",
+    "1 zucchini, sliced",
+    "1 potato, peeled and cubed",
+    "1 cup tofu, cubed",
+    "2 tablespoons doenjang (Korean soybean paste)",
+    "4 cups water or vegetable broth",
+    "1 tablespoon gochujang (Korean red pepper paste)",
+    "2 green onions, chopped",
+    "1 tablespoon sesame oil",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Heat vegetable oil in a pot over medium heat. Add the sliced onion and minced garlic. Sauté until the onion is translucent.\n2. Add the zucchini, potato, and tofu to the pot. Stir and cook for a few minutes.\n3. In a small bowl, mix the doenjang with a bit of water to make a smooth paste. Add the doenjang paste to the pot and stir well.\n4. Pour in the water or vegetable broth. Bring to a boil, then reduce the heat and simmer for about 15-20 minutes, or until the vegetables are tender.\n5. Stir in the gochujang, green onions, and sesame oil. Cook for another 2-3 minutes.\n6. Season with salt and pepper to taste.\n7. Serve the Doenjang Jjigae hot with a bowl of steamed rice.\n8. Enjoy the rich and savory flavors of Doenjang Jjigae!"
+},
+  {
+  "name": "Jjajangmyeon",
+  "ingredients": [
+    "200g pork belly, diced",
+    "1 onion, finely chopped",
+    "2 cloves garlic, minced",
+    "2 tablespoons vegetable oil",
+    "4 tablespoons black bean paste (chunjang)",
+    "2 tablespoons sugar",
+    "1 tablespoon oyster sauce",
+    "1 cup water",
+    "2 tablespoons cornstarch mixed with 4 tablespoons water",
+    "4 servings of fresh or dried wheat noodles",
+    "2 cucumbers, julienned",
+    "4 eggs, fried sunny-side up",
+    "Optional toppings: sliced green onions, shredded carrots"
+  ],
+  "instructions": "1. Heat vegetable oil in a large skillet or wok over medium heat.\n2. Add diced pork belly and stir-fry until browned.\n3. Add chopped onions and minced garlic. Continue stir-frying until onions become translucent.\n4. Add black bean paste (chunjang) and stir-fry for a few minutes to release its aroma.\n5. Stir in sugar and oyster sauce.\n6. Pour in water and bring the mixture to a boil. Reduce heat and let it simmer for 10 minutes.\n7. Gradually add the cornstarch mixture, stirring constantly, until the sauce thickens to your desired consistency.\n8. Cook the noodles according to the package instructions and drain.\n9. Serve the cooked noodles in bowls and top with the black bean sauce.\n10. Garnish with julienned cucumbers, fried eggs, and any optional toppings.\n11. Mix everything together before eating and enjoy your delicious Jjajangmyeon!"
+},
+  {
+  "name": "Jjamppong",
+  "ingredients": [
+    "200g mixed seafood (shrimp, squid, mussels)",
+    "100g pork belly, thinly sliced",
+    "2 tablespoons vegetable oil",
+    "1 onion, thinly sliced",
+    "2 cloves garlic, minced",
+    "1 teaspoon grated ginger",
+    "2 tablespoons gochugaru (Korean red pepper flakes)",
+    "4 cups chicken or seafood broth",
+    "2 tablespoons soy sauce",
+    "1 tablespoon oyster sauce",
+    "1 tablespoon gochujang (Korean red pepper paste)",
+    "1 teaspoon sesame oil",
+    "2 green onions, sliced",
+    "200g fresh or dried noodles",
+    "Salt and pepper to taste"
+  ],
+  "instructions": "1. Heat vegetable oil in a large pot or wok over medium heat.\n2. Add pork belly slices and cook until lightly browned.\n3. Add sliced onions, minced garlic, and grated ginger. Stir-fry until onions become translucent.\n4. Stir in gochugaru and cook for a minute to release its flavor and spice.\n5. Add mixed seafood and continue stir-frying for a few minutes.\n6. Pour in chicken or seafood broth, soy sauce, oyster sauce, and gochujang. Bring the soup to a boil.\n7. Reduce heat and let it simmer for 10-15 minutes to allow the flavors to meld together.\n8. Meanwhile, cook the noodles according to the package instructions and drain.\n9. Add cooked noodles to the pot and stir gently to combine.\n10. Season with salt, pepper, and sesame oil to taste.\n11. Garnish with sliced green onions.\n12. Serve hot and enjoy your spicy and flavorful Jjamppong!"
+},
+  {
+  "name": "Pajeon (Korean Pancake)",
+  "ingredients": [
+    "1 cup all-purpose flour",
+    "1 cup water",
+    "2 eggs",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1 cup chopped scallions (green onions)",
+    "1/2 cup chopped kimchi (optional)",
+    "2 tablespoons vegetable oil"
+  ],
+  "instructions": "1. In a mixing bowl, whisk together flour, water, eggs, salt, and black pepper until well combined.\n2. Add chopped scallions and kimchi (if using) to the batter and mix well.\n3. Heat vegetable oil in a non-stick skillet or frying pan over medium heat.\n4. Pour the batter onto the pan, spreading it evenly to form a round pancake.\n5. Cook for about 3-4 minutes, or until the bottom is golden brown and crispy.\n6. Flip the pancake and cook for an additional 3-4 minutes on the other side.\n7. Once cooked, transfer the pancake to a serving plate.\n8. Cut into slices and serve hot with a dipping sauce of your choice.\n9. Enjoy your delicious Pajeon, a Korean pancake perfect as an appetizer or snack!"
+},
+  {
+  "name": "Haemul Pajeon (Korean Seafood Pancake)",
+  "ingredients": [
+    "1 cup all-purpose flour",
+    "1 cup water",
+    "2 eggs",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1 cup mixed seafood (such as shrimp, squid, and mussels), chopped",
+    "1/2 cup chopped scallions (green onions)",
+    "2 tablespoons vegetable oil"
+  ],
+  "instructions": "1. In a mixing bowl, whisk together flour, water, eggs, salt, and black pepper until well combined.\n2. Add chopped mixed seafood and scallions to the batter and mix well.\n3. Heat vegetable oil in a non-stick skillet or frying pan over medium heat.\n4. Pour the batter onto the pan, spreading it evenly to form a round pancake.\n5. Cook for about 3-4 minutes, or until the bottom is golden brown and crispy.\n6. Flip the pancake and cook for an additional 3-4 minutes on the other side.\n7. Once cooked, transfer the pancake to a serving plate.\n8. Cut into slices and serve hot with a dipping sauce of your choice.\n9. Enjoy your delicious Haemul Pajeon, a Korean pancake with a savory seafood twist!"
+},
+  {
+  "name": "Kimchi Jeon (Kimchi Pancake)",
+  "ingredients": [
+    "1 cup all-purpose flour",
+    "1 cup water",
+    "1/2 cup kimchi, chopped",
+    "1/4 cup kimchi juice",
+    "2 green onions, chopped",
+    "2 tablespoons vegetable oil",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon black pepper"
+  ],
+  "instructions": "1. In a mixing bowl, combine all-purpose flour and water, and whisk until smooth.\n2. Add chopped kimchi, kimchi juice, green onions, salt, and black pepper to the batter. Mix well.\n3. Heat vegetable oil in a non-stick skillet or frying pan over medium heat.\n4. Pour the batter onto the pan, spreading it evenly to form a round pancake.\n5. Cook for about 3-4 minutes, or until the bottom is golden brown and crispy.\n6. Flip the pancake and cook for an additional 3-4 minutes on the other side.\n7. Once cooked, transfer the pancake to a serving plate.\n8. Cut into slices and serve hot with a dipping sauce of your choice.\n9. Enjoy your flavorful Kimchi Jeon, a Korean pancake with a tangy and spicy kimchi twist!"
+},
+  {
+  "name": "California Roll",
+  "ingredients": [
+    "1 cup sushi rice",
+    "2 sheets of nori (seaweed)",
+    "1/2 avocado, sliced",
+    "1/2 cucumber, julienned",
+    "4 imitation crab sticks, sliced",
+    "Sesame seeds for garnish",
+    "Soy sauce, wasabi, and pickled ginger for serving"
+  ],
+  "instructions": "1. Rinse the sushi rice under cold water until the water runs clear. Cook the rice according to package instructions.\n2. Place a sheet of nori on a bamboo sushi mat or a sheet of plastic wrap.\n3. Wet your hands with water and evenly spread half of the sushi rice on the nori, leaving a small border at the top.\n4. Sprinkle sesame seeds over the rice.\n5. Flip the nori sheet over so that the rice is facing down.\n6. Place avocado, cucumber, and crab sticks in a line across the nori sheet, about one-third of the way up.\n7. Using the sushi mat or plastic wrap, tightly roll the nori sheet, applying gentle pressure to keep the ingredients in place.\n8. Repeat the process with the second sheet of nori and the remaining ingredients.\n9. Use a sharp knife to slice each sushi roll into bite-sized pieces.\n10. Serve the California rolls with soy sauce, wasabi, and pickled ginger.\n11. Enjoy your homemade California Roll sushi!"
+},
+  {
+  "name": "Spicy Tuna Roll",
+  "ingredients": [
+    "4 sheets of nori (seaweed)",
+    "2 cups sushi rice",
+    "8 ounces fresh tuna, diced",
+    "2 tablespoons mayonnaise",
+    "1 tablespoon sriracha sauce",
+    "1/2 teaspoon sesame oil",
+    "1/4 teaspoon salt",
+    "1/4 teaspoon black pepper",
+    "1/2 cucumber, thinly sliced",
+    "Soy sauce and wasabi for serving"
+  ],
+  "instructions": "1. In a bowl, combine the diced tuna, mayonnaise, sriracha sauce, sesame oil, salt, and black pepper. Mix well to coat the tuna with the spicy mayo sauce.\n2. Place a sheet of nori on a bamboo sushi mat or a clean kitchen towel.\n3. Wet your hands with water and take a handful of sushi rice. Spread the rice evenly on the nori, leaving about 1 inch of the nori uncovered at the top.\n4. Place a line of sliced cucumber and a line of the spicy tuna mixture in the center of the rice.\n5. Start rolling the sushi tightly using the bamboo mat or towel, applying gentle pressure to keep the roll firm.\n6. Repeat the process with the remaining nori, rice, cucumber, and tuna mixture.\n7. Once all the rolls are made, use a sharp knife to slice each roll into bite-sized pieces.\n8. Serve the Spicy Tuna Rolls with soy sauce and wasabi on the side.\n9. Enjoy your homemade Spicy Tuna Rolls!"
+},
+  {
+  "name": "Tempura Shrimp Roll",
+  "ingredients": [
+    "4 sheets of nori (seaweed)",
+    "2 cups sushi rice",
+    "8 large shrimp, peeled and deveined",
+    "1 cup tempura batter mix",
+    "1 cup ice-cold water",
+    "Vegetable oil for frying",
+    "1/2 avocado, thinly sliced",
+    "1/2 cucumber, thinly sliced",
+    "Soy sauce and wasabi for serving"
+  ],
+  "instructions": "1. Prepare the tempura batter by combining the tempura batter mix and ice-cold water in a bowl. Stir until the batter is smooth.\n2. Heat vegetable oil in a deep pan or fryer to 350°F (175°C).\n3. Dip each shrimp into the tempura batter, making sure to coat it completely, and carefully place it into the hot oil. Fry until the shrimp turns golden brown and crispy. Remove and drain on a paper towel.\n4. Place a sheet of nori on a bamboo sushi mat or a clean kitchen towel.\n5. Wet your hands with water and take a handful of sushi rice. Spread the rice evenly on the nori, leaving about 1 inch of the nori uncovered at the top.\n6. Place a line of sliced avocado, cucumber, and tempura shrimp in the center of the rice.\n7. Start rolling the sushi tightly using the bamboo mat or towel, applying gentle pressure to keep the roll firm.\n8. Repeat the process with the remaining nori, rice, avocado, cucumber, and tempura shrimp.\n9. Once all the rolls are made, use a sharp knife to slice each roll into bite-sized pieces.\n10. Serve the Tempura Shrimp Rolls with soy sauce and wasabi on the side.\n11. Enjoy your delicious Tempura Shrimp Rolls!"
+},
+  
 
 
 
@@ -633,6 +1648,15 @@ dishes = [
 
 
 
+
+
+
+
+
+
+
+
+  
 
 
 
